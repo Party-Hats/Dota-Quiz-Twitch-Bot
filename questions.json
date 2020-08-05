@@ -1,0 +1,25 @@
+[
+  {
+    "question": "Was ist Centaur Warrunners base strength?",
+    "answers": [
+      "27"
+    ]
+  },
+  {
+    "question": "Wie viel Mana kostet Witch Doctors Death Ward?",
+    "answers": [
+      "200",
+      "200Mana"
+    ]
+  },
+  {
+    "question": "Welchen Cooldown hat Snapfires Mortmier Kisses?",
+    "answers": [
+      "110",
+      "110sec",
+      "110s",
+      "110sekunden",
+      "110seconds"
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "channelName": "dota_quiz",
+  "postQuestionIntervalInSeconds": 60,
+  "questionTimeoutInSeconds": 0,
+  "answerPrefix":"?",
+  "identity": {
+    "username": "dota_quiz",
+    "password": "oauth:x7r95dzhkxqwud1mutj6u61hghagc6"
+  }
+}
