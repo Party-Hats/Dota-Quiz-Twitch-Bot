@@ -42,6 +42,7 @@ function writeToStore(user, updateWith) {
     userData.score = userData.score + updateWith;
     loadedStore[user] = userData;
     _setStore(loadedStore);
+    console.log("Saved store with updated data: " + userData);
     storeLock.unlock();
   });
 }

@@ -2,6 +2,8 @@
 A Simple Twitch Bot, that regularly posts questions into a twitch channel that can be answered by the viewers.   
 This bot was built for the streamer https://twitch.tv/HansiPowers
 
+New features can freely be tested in the chat of https://twitch.tv/dota_quiz
+
 # User Guide
 
 TODO
