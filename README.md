@@ -7,10 +7,13 @@ This bot was built for the streamer https://twitch.tv/HansiPowers
 TODO
 
 # Feature backlog
+### In progress
+
+* Count and persist correct answers per user
+
 ### Major 
 
 * Have asked questions expire after a certain time
-* Count and persist correct answers per user
 * Give chat users the ability to check their answer score
 * Give Hansi the ability to get all user scores and reset the persisted data
 * Have a command that starts/stops the bot
@@ -18,6 +21,8 @@ TODO
 
 ### Minor
 
+* Move all posted text to a separate file to make it easier to modify
+* Make sure client reconnects to twitch when it is disconnected
 * Implement some logic, that makes sure, that the same questions are not asked too soon again 
 (e.g. only allow question to be asked again after at least 50% of the other questions have been asked)
 * Post one valid answer when question expires / a new question is asked
