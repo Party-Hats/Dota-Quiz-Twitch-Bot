@@ -8,9 +8,6 @@ TODO
 
 # Feature backlog
 ### In progress
-
-* Count and persist correct answers per user
-
 ### Major 
 
 * Have asked questions expire after a certain time
