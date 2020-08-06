@@ -2,6 +2,10 @@
 A Simple Twitch Bot, that regularly posts questions into a twitch channel that can be answered by the viewers.   
 This bot was built for the streamer https://twitch.tv/HansiPowers
 
+# User Guide
+
+TODO
+
 # Feature backlog
 ### Major 
 
