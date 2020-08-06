@@ -5,5 +5,10 @@
   "answerPrefix":"?",
   "identity": {
     "username": "dota_quiz"
+  },
+  "commands": {
+    "personalScore": "#score",
+    "allScores": "#totalScore",
+    "reset": "#reset"
   }
 }
