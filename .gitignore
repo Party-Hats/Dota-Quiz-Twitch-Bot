@@ -18,3 +18,6 @@ target/
 
 # NodeJS
 node_modules/
+
+# Secrets
+token

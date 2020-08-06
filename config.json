@@ -4,7 +4,6 @@
   "questionTimeoutInSeconds": 0,
   "answerPrefix":"?",
   "identity": {
-    "username": "dota_quiz",
-    "password": "<secret>"
+    "username": "dota_quiz"
   }
 }

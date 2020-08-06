@@ -1,17 +1,29 @@
 const tmi = require('tmi.js');
 const fs = require('fs');
 
+const tokenFile = 'token';
 const config = JSON.parse(fs.readFileSync('config.json'));
-const opts = {
-  identity: config.identity,
-  channels: [
-    config.channelName
-  ]
-};
-const client = new tmi.client(opts);
+const client = new tmi.client(buildClientOpts());
 const questions = JSON.parse(fs.readFileSync('questions.json'));
+
 var currentQuestion = {};
 var currentTimeout = undefined;
+
+setup();
+
+function buildClientOpts() {
+  var token = fs.readFileSync(tokenFile) + "";
+  console.log(token);
+  return {
+    "channels": [
+      config.channelName
+    ],
+    "identity": {
+      "username": config.identity.username,
+      "password": token
+    }
+  };
+}
 
 function setup() {
   client.on('chat', onMessageHandler);
@@ -21,8 +33,6 @@ function setup() {
   console.log("All available questions:\n" + JSON.stringify(questions));
 
   setInterval(ask, config.postQuestionIntervalInSeconds * 1000);
-//setTimeout(ask, 2000);
-ask();
 }
 
 function ask() {
@@ -83,5 +93,3 @@ function onMessageHandler (target, context, message, self) {
 function onConnectedHandler (addr, port) {
   console.log(`* Connected to ${addr}:${port}`);
 }
-
-setup();
