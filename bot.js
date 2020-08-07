@@ -62,7 +62,7 @@ function timeoutQuestion() {
 }
 
 function resetTimeout() {
-  currentTimeout = undefined;
+  return; // todo
   if (currentTimeout !== undefined) {
     clearTimeout(currentTimeout);
   }
