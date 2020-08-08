@@ -3,17 +3,17 @@ const fs = require('fs');
 const store = require('./store.js');
 
 const tokenFile = 'token';
-const config = JSON.parse(fs.readFileSync('config.json'));
+const config = JSON.parse(fs.readFileSync('config.json', "utf-8"));
 const client = new tmi.client(buildClientOpts());
-const questions = JSON.parse(fs.readFileSync('questions.json'));
+const questions = JSON.parse(fs.readFileSync('questions.json', "utf-8"));
 
-var currentQuestion = {};
-var currentTimeout = undefined;
+let currentQuestion = {};
+let currentTimeout = undefined;
 
 setup();
 
 function buildClientOpts() {
-  var token = fs.readFileSync(tokenFile) + "";
+  let token = fs.readFileSync(tokenFile) + "";
   return {
     "channels": [
       config.channelName
@@ -28,17 +28,17 @@ function buildClientOpts() {
 function setup() {
   client.on('chat', onMessageHandler);
   client.on('connected', onConnectedHandler);
-  client.connect();
+  client.connect().then(function () {
+		console.log("All available questions:\n" + JSON.stringify(questions, null, " "));
 
-  console.log("All available questions:\n" + JSON.stringify(questions, null, " "));
-
-  setInterval(ask, config.postQuestionIntervalInSeconds * 1000);
+		setInterval(ask, config.postQuestionIntervalInSeconds * 1000);
+	});
 }
 
 function ask() {
   currentQuestion = questions[Math.floor(Math.random() * questions.length)];
 
-  var message = currentQuestion.question + " (Rate mit: " + config.answerPrefix
+  let message = currentQuestion.question + " (Rate mit: " + config.answerPrefix
     + "<Antwort>) DEBUG: Try command: #score #totalScore #reset";
 
   client.say(config.channelName, message);
@@ -69,18 +69,18 @@ function resetTimeout() {
 }
 
 function resolveSpecialCommands(channel, user, message) {
-  var coms = config.commands;
-  if (coms.personalScore === message) {
+  let comms = config.commands;
+  if (comms.personalScore === message) {
     store.readForUser(user, function(data) {
       client.say(channel, user + " deine gesamte Punktzahl ist " + data);
     });
     return true;
-  } else if (coms.allScores === message) {
+  } else if (comms.allScores === message) {
     store.readAll(function(data) {
       _sendMultilineScores(channel, data);
     });
     return true;
-  } else if (coms.reset === message) {
+  } else if (comms.reset === message) {
     store.resetStore(function(data) { // TODO readAndReset
       client.say(channel, "Alle Punktzahlen werden zurückgesetzt. Hier der Punktstand bis hierhin:");
       _sendMultilineScores(channel, data);
@@ -102,7 +102,7 @@ function _sendMultilineScores(channel, data) {
 function onMessageHandler (target, context, message, self) {
   if (self) { return; }
 
-  var chatSender = context['display-name'];
+  let chatSender = context['display-name'];
   if (resolveSpecialCommands(target, chatSender, message.trim())) {
     // Message was a special command and not an answer
     return;
@@ -116,7 +116,7 @@ function onMessageHandler (target, context, message, self) {
   }
 
   // Remove whitespaces from chat message
-  var answer = message.replace(/\s/g, '');
+  let answer = message.replace(/\s/g, '');
   answer = answer.substr(config.answerPrefix.length);
 
   if (currentQuestion.answers.includes(answer)) {
