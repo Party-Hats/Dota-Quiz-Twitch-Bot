@@ -4,6 +4,7 @@
   "postQuestionIntervalInSeconds": 60,
   "questionTimeoutInSeconds": 0,
   "answerPrefix":"?",
+  "reactToWrongAnswer": false,
   "identity": {
     "username": "dota_quiz"
   },
