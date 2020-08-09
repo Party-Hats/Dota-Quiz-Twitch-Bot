@@ -11,6 +11,8 @@
     "personalScore": "#score"
   },
   "adminCommands": {
+    "start": "#startQuiz",
+    "stop": "#stopQuiz",
     "allScores": "#totalScore",
     "reset": "#reset"
   }
