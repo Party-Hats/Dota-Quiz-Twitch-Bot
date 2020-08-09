@@ -1,5 +1,6 @@
 {
   "channelName": "dota_quiz",
+  "channelAdmin": "dota_quiz",
   "postQuestionIntervalInSeconds": 60,
   "questionTimeoutInSeconds": 0,
   "answerPrefix":"?",
@@ -7,7 +8,9 @@
     "username": "dota_quiz"
   },
   "commands": {
-    "personalScore": "#score",
+    "personalScore": "#score"
+  },
+  "adminCommands": {
     "allScores": "#totalScore",
     "reset": "#reset"
   }
