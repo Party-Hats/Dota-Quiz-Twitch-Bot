@@ -193,9 +193,11 @@ function onMessageHandler (target, context, message, self) {
     resetTimeout();
     currentQuestion = {};
   } else {
-    client.say(target, parseLocaleString(lang.wrongAnswer, {
-    	user: chatSender
-		}));
+  	if (config.reactToAnswer) {
+			client.say(target, parseLocaleString(lang.wrongAnswer, {
+				user: chatSender
+			}));
+		}
   }
 }
 
