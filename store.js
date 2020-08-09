@@ -12,7 +12,7 @@ if (!fs.existsSync(storeFilePath)) {
 
 function readAll(callback) {
   storeLock.readLock(function() {
-    var store = _getStore();
+    let store = _getStore();
     storeLock.unlock();
     callback(store);
   })
@@ -20,7 +20,7 @@ function readAll(callback) {
 
 function readForUser(user, callback) {
   storeLock.readLock(function() {
-    var userData = _getStore()[user];
+    let userData = _getStore()[user];
     storeLock.unlock();
     if (!userData) {
       callback(0);
@@ -32,8 +32,8 @@ function readForUser(user, callback) {
 
 function writeToStore(user, updateWith) {
   storeLock.writeLock(function() {
-    var loadedStore = _getStore();
-    var userData = loadedStore[user];
+    let loadedStore = _getStore();
+    let userData = loadedStore[user];
     if (!userData) {
       userData = {
         "score": 0
@@ -42,7 +42,8 @@ function writeToStore(user, updateWith) {
     userData.score = userData.score + updateWith;
     loadedStore[user] = userData;
     _setStore(loadedStore);
-    console.log("Saved store with updated data: " + userData);
+    console.log("Saved to store with updated data for user \"" + user + "\": "
+				+ JSON.stringify(userData));
     storeLock.unlock();
   });
 }
@@ -62,7 +63,7 @@ function resetStore(callback) {
 }
 
 function _getStore() {
-  return JSON.parse(fs.readFileSync(storeFilePath));
+  return JSON.parse(fs.readFileSync(storeFilePath, "utf-8"));
 }
 
 function _setStore(jsonStore) {
