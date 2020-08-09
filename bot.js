@@ -11,6 +11,7 @@ const lang = JSON.parse(fs.readFileSync('lang/german.json', 'utf-8'));
 
 let currentQuestion = {};
 let currentTimeout = undefined;
+let running = false;
 
 setup();
 
@@ -45,6 +46,11 @@ function parseLocaleString(message, parameterMap) {
 }
 
 function ask() {
+	if (!running) {
+		console.log("Bot is not running. Skipping ask question");
+		return;
+	}
+
   currentQuestion = questions[Math.floor(Math.random() * questions.length)];
 
   let message = parseLocaleString(lang.askQuestion, {
@@ -116,6 +122,21 @@ function resolveAdminCommands(channel, user, message) {
 			});
 			return true;
 		}
+	} else if (comms.start === message) {
+		if (config.channelAdmin === user) {
+			running = true;
+			client.say(channel, "Starting Bot. Question interval is "
+					+ config.postQuestionIntervalInSeconds + "seconds");
+			console.log("Starting bot");
+			return true;
+		}
+	} else if (comms.stop === message) {
+		if (config.channelAdmin === user) {
+			running = false;
+			client.say(channel, "Stopping Bot. Will not react to anything but commands");
+			console.log("Stopping bot");
+			return false;
+		}
 	} else {
 		return false;
 	}
@@ -146,6 +167,12 @@ function onMessageHandler (target, context, message, self) {
   }
 
   if (!message.startsWith(config.answerPrefix)) { return; }
+
+	if (!running) {
+		console.log("Not reacting to message from user \"" + chatSender
+				+ "\" as bot is disabled: " + message);
+		return;
+	}
 
   if (Object.keys(currentQuestion).length === 0 || currentQuestion.answers === null) {
     client.say(target, parseLocaleString(lang.noQuestion, {
