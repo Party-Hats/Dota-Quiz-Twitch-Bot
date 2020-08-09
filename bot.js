@@ -67,9 +67,12 @@ function ask() {
 
 function timeoutQuestion() {
   resetTimeout();
-  currentQuestion = {};
   console.log("Question timed out. Resetting it");
-  client.say(config.channelName, lang.questionTimedOut);
+  client.say(config.channelName, parseLocaleString(lang.questionTimedOut, {
+  	question: currentQuestion.question,
+		answer: currentQuestion.answers[0]
+	}));
+	currentQuestion = {};
 }
 
 function resetTimeout() {
