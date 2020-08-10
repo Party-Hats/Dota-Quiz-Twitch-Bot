@@ -10,7 +10,8 @@
     "username": "dota_quiz"
   },
   "commands": {
-    "personalScore": "#score"
+    "personalScore": "#score",
+    "currentQuestion": "#frage"
   },
   "adminCommands": {
     "start": "#startQuiz",

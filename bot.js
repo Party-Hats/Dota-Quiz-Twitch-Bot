@@ -101,7 +101,13 @@ function resolveSpecialCommands(channel, user, message) {
 			}));
     });
     return true;
-  }
+  } else if(comms.currentQuestion === message) {
+  	client.say(channel, parseLocaleString(lang.askQuestion, {
+			question: currentQuestion.question,
+			answerPrefix: config.answerPrefix
+		}));
+  	return true;
+	}
   return false;
 }
 
