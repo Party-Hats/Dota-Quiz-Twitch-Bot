@@ -101,7 +101,13 @@ function resolveSpecialCommands(channel, user, message) {
 			}));
     });
     return true;
-  }
+  } else if(comms.currentQuestion === message) {
+  	client.say(channel, parseLocaleString(lang.askQuestion, {
+			question: currentQuestion.question,
+			answerPrefix: config.answerPrefix
+		}));
+  	return true;
+	}
   return false;
 }
 
@@ -175,9 +181,11 @@ function onMessageHandler (target, context, message, self) {
 	}
 
   if (Object.keys(currentQuestion).length === 0 || currentQuestion.answers === null) {
-    client.say(target, parseLocaleString(lang.noQuestion, {
-    	user: chatSender
-		}));
+  	if (config.reactToNoQuestion) {
+			client.say(target, parseLocaleString(lang.noQuestion, {
+				user: chatSender
+			}));
+		}
     return;
   }
 
