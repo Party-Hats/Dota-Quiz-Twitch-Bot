@@ -5,6 +5,7 @@
   "questionTimeoutInSeconds": 0,
   "answerPrefix":"?",
   "reactToWrongAnswer": false,
+  "reactToNoQuestion": false,
   "identity": {
     "username": "dota_quiz"
   },

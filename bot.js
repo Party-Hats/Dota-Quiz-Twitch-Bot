@@ -175,9 +175,11 @@ function onMessageHandler (target, context, message, self) {
 	}
 
   if (Object.keys(currentQuestion).length === 0 || currentQuestion.answers === null) {
-    client.say(target, parseLocaleString(lang.noQuestion, {
-    	user: chatSender
-		}));
+  	if (config.reactToNoQuestion) {
+			client.say(target, parseLocaleString(lang.noQuestion, {
+				user: chatSender
+			}));
+		}
     return;
   }
 
