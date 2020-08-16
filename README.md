@@ -1,8 +1,8 @@
 # Dota-Quiz-Twitch-Bot
-A Simple Twitch Bot, that regularly posts questions into a twitch channel that can be answered by the viewers.   
-This bot was built for the streamer https://twitch.tv/HansiPowers
-This is also the reason all text, that is posted to the chat is in german.
-When implementing multiple languages it is a requirement to always have german as a supported language.
+A Simple Twitch Bot, that regularly posts questions into a twitch channel that can be answered by the viewers.  
+This bot was built for the streamer https://twitch.tv/HansiPowers  
+This is also the reason all text, that is posted to the chat is in german.  
+When implementing multiple languages it is a requirement to always have german as a supported language.  
 
 New features can freely be tested in the chat of https://twitch.tv/dota_quiz
 
@@ -33,7 +33,7 @@ A token can be created using this link: https://twitchapps.com/tmi/
 
 ### Features
 
-:pushpin: Properties with this icon can be changed in the configuration file
+:pushpin: Properties with this icon can be changed in the configuration file  
 Note, that all commands are case-insensitive, meaning, that for example `#score` and `#SCOre` would do the same
 ### General
 * When running, the bot has to be started to post questions using the command `#startQuiz` :pushpin:
@@ -108,20 +108,20 @@ See [Admin Commands `#reset`](#admin-commands)
 ### About questions and answers
 Currently all questions are build like this:
 
-* A question is just a simple text with no variables or anything similar.
+* A question is just a simple text with no variables or anything similar.  
 For example: "Welchen Cooldown hat Snapfires Mortimer Kisses?"
-* A question have multiple answers where each answer is correct.
-A user has to given any of these answers to be correct.
+* A question have multiple answers where each answer is correct.  
+A user has to given any of these answers to be correct.  
 For example: `110`, `110s`
-* When checking if an answer is correct it is compared with all configured correct answers.
-When doing this _**all whitespaces are removed**_ from the answer and the answer is _**case-insensitive**_.
+* When checking if an answer is correct it is compared with all configured correct answers.  
+When doing this _**all whitespaces are removed**_ from the answer and the answer is _**case-insensitive**_.  
 For example: The answer `110 S` still matches the answer `110s`
 * This also means, when setting up questions, the answers should _**not contain any whitespaces**_ and all text should be _**in lower case**_
 
 ### Language Files
 
-These are the texts, that are posted into the chat as described.
-Most messages can have variables, that are replaced when the message is posted into the chat.
+These are the texts, that are posted into the chat as described.  
+Most messages can have variables, that are replaced when the message is posted into the chat.  
 A variable can be used in a message by surrounding it with `${` and `}`
 
 ###### askQuestion
@@ -133,14 +133,14 @@ Variables:
 * `answerPrefix`: The prefix, that has to be used when answering the question. See [General Features](#general) for details
 
 ###### noQuestion
-A user asked for the current question or tried to answer a question, when none is currently open.
+A user asked for the current question or tried to answer a question, when none is currently open.  
 This message can be [disabled completely](#reacttonoquestion)
 
 Variables:
 * `user`: The user, that sent the message
 
 ###### wrongAnswer
-The wrong answer was given for a question
+The wrong answer was given for a question  
 This message can be [disabled completely](#reacttowronganswer)
 
 Variables:
