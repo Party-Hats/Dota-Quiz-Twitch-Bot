@@ -1,6 +1,7 @@
 const tmi = require('tmi.js');
 const fs = require('fs');
 const store = require('./store.js');
+const log = require('./log.js');
 
 const tokenFile = 'token';
 const config = JSON.parse(fs.readFileSync('config.json', "utf-8"));
@@ -32,7 +33,7 @@ function setup() {
   client.on('chat', onMessageHandler);
   client.on('connected', onConnectedHandler);
   client.connect().then(function () {
-		console.log("All available questions:\n" + JSON.stringify(questions, null, " "));
+		log.info("All available questions:\n" + JSON.stringify(questions, null, " "));
 
 		setInterval(ask, config.postQuestionIntervalInSeconds * 1000);
 	});
@@ -47,7 +48,7 @@ function parseLocaleString(message, parameterMap) {
 
 function ask() {
 	if (!running) {
-		console.log("Bot is not running. Skipping ask question");
+		log.info("Bot is not running. Skipping ask question");
 		return;
 	}
 
@@ -59,21 +60,21 @@ function ask() {
 			});
 
   client.say(config.channelName, message);
-  console.log("Quiz question asked: " + message);
-  console.log("Possible answers: " + JSON.stringify(currentQuestion.answers));
+  log.info("Quiz question asked: " + message);
+  log.info("Possible answers: " + JSON.stringify(currentQuestion.answers));
   return;
   // The timeout does not work currently as it is not really sync.
   if (config.questionTimeoutInSeconds > 0) {
-    console.log("Question will timeout in " + config.questionTimeoutInSeconds + " seconds");
+    log.info("Question will timeout in " + config.questionTimeoutInSeconds + " seconds");
     currentTimeout = setTimeout(timeoutQuestion, config.questionTimeoutInSeconds * 1000);
   } else {
-    console.log("Question timeout disabled");
+    log.info("Question timeout disabled");
   }
 }
 
 function timeoutQuestion() {
   resetTimeout();
-  console.log("Question timed out. Resetting it");
+  log.info("Question timed out. Resetting it");
   client.say(config.channelName, parseLocaleString(lang.questionTimedOut, {
   	question: currentQuestion.question,
 		answer: currentQuestion.answers[0]
@@ -133,20 +134,20 @@ function resolveAdminCommands(channel, user, message) {
 			running = true;
 			client.say(channel, "Starting Bot. Question interval is "
 					+ config.postQuestionIntervalInSeconds + "seconds");
-			console.log("Starting bot");
+			log.info("Starting bot");
 			return true;
 		}
 	} else if (comms.stop === message) {
 		if (config.channelAdmin === user) {
 			running = false;
 			client.say(channel, "Stopping Bot. Will not react to anything but commands");
-			console.log("Stopping bot");
+			log.info("Stopping bot");
 			return false;
 		}
 	} else {
 		return false;
 	}
-	console.log("Invalid user tried to execute admin command. User: \""
+	log.info("Invalid user tried to execute admin command. User: \""
 			+ user + "\"; Command: \"" + message + "\"");
 	return true;
 }
@@ -175,7 +176,7 @@ function onMessageHandler (target, context, message, self) {
   if (!message.startsWith(config.answerPrefix)) { return; }
 
 	if (!running) {
-		console.log("Not reacting to message from user \"" + chatSender
+		log.info("Not reacting to message from user \"" + chatSender
 				+ "\" as bot is disabled: " + message);
 		return;
 	}
@@ -210,5 +211,5 @@ function onMessageHandler (target, context, message, self) {
 }
 
 function onConnectedHandler (addr, port) {
-  console.log(`* Connected to ${addr}:${port}`);
+  log.info(`* Connected to ${addr}:${port}`);
 }
