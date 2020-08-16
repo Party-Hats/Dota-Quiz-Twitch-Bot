@@ -26,7 +26,7 @@ Important files:
 
 ### Setup
 
-* Before usage, a twitch account, that should post the messages has to be created. After that, a login token has to be created for that user, that is used by this bot to login. Note that removing the token from the twitch account will remove all access for the bot. No need to change the account password.
+* Before usage, a twitch account, that should post the messages has to be created. After that, a login token has to be created for that user, that is used by this bot to login. Note that removing the token from the twitch account will remove all access for the bot. No need to change the account password.  
 A token can be created using this link: https://twitchapps.com/tmi/
 * After creating the token, write the username of the account into the configuration file under `identity.username` and write the token into a text file named `token` in the base folder
 * Set the `channelName` to the channel the bot should post into
