@@ -41,7 +41,7 @@ Note, that all commands are case-insensitive, meaning, that for example `#score`
 * Note, that start and stop are only available to a channel admin who can be configured in the config under `channelAdmin`
 * The bot will post questions into the chat every 60seconds :pushpin:
 * When the question is not answered correctly within 20seconds :pushpin:, it "expires" with a notification in chat
-* Chat users can try to answer the question by prefixing the chat answer with `?` :pushpin. For example: `?110mana`
+* Chat users can try to answer the question by prefixing the chat answer with `?` :pushpin:. For example: `?110mana`
 * When sending a wrong answer the bot will not react (:pushpin:: It can be configured to send a "wrong answer" notification into the chat)
 * When correctly answering a question, the user gets a message in chat and gets a score point. Also, the question immediately expires so no other chat used can answer it.
 * The use score for each correct answer is saved and can be accessed later
