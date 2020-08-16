@@ -60,49 +60,49 @@ Note, that all commands are case-insensitive, meaning, that for example `#score`
 
 ### `config.json`
 
-##### channelName
+#### channelName
 The name of the twitch channel, the bot should post its messages and react to commands
 
-##### channelAdmin
+#### channelAdmin
 The name of the twitch user, that is able to execute the Admin Commands
 
-##### postQuestionIntervalInSeconds
+#### postQuestionIntervalInSeconds
 The interval in which questions should be posted in seconds
 
-##### questionTimeoutInSeconds
+#### questionTimeoutInSeconds
 The time a question expires after it has been posted in seconds
 
-##### questionCooldownPercent
+#### questionCooldownPercent
 When a question was posted it goes on "cooldown" and this percentage of other question have to be posted before this question can come up again
 
-##### answerPrefix
+#### answerPrefix
 The prefix, that is required on a chat message for it to be recognized as a potential answer
 
-##### reactToWrongAnswer
+#### reactToWrongAnswer
 When enabled, a message is sent when a user sent a wrong answer
 
-##### reactToNoQuestion
+#### reactToNoQuestion
 When enabled, a message is sent when a user asks for the current question or tries to answer it, but no answer is currently active
 
-##### identity.username
+#### identity.username
 The name of the twitch account, that is used by the bot to send and receive messages
 
-##### commands.personalScore
+#### commands.personalScore
 See [User Commands `#score`](#user-commands)
 
-##### commands.currentQuestion
+#### commands.currentQuestion
 See [User Commands `#frage`](#user-commands)
 
-##### adminCommands.start
+#### adminCommands.start
 See [Admin Commands `#startQuiz`](#admin-commands)
 
-##### adminCommands.stop
+#### adminCommands.stop
 See [Admin Commands `#stopQuiz`](#admin-commands)
 
-##### adminCommands.allScores
+#### adminCommands.allScores
 See [Admin Commands `#totalScore`](#admin-commands)
 
-##### adminCommands.reset
+#### adminCommands.reset
 See [Admin Commands `#reset`](#admin-commands)
 
 ### About questions and answers
@@ -124,7 +124,7 @@ These are the texts, that are posted into the chat as described.<br/>
 Most messages can have variables, that are replaced when the message is posted into the chat.<br/>
 A variable can be used in a message by surrounding it with `${` and `}`
 
-##### askQuestion
+#### askQuestion
 A new question is asked or a user sent the [command](#commandscurrentquestion) to see the question
 
 Variables:
@@ -132,28 +132,28 @@ Variables:
 * `timeout`: The timeout for the current question
 * `answerPrefix`: The prefix, that has to be used when answering the question. See [General Features](#general) for details
 
-##### noQuestion
+#### noQuestion
 A user asked for the current question or tried to answer a question, when none is currently open.<br/>
 This message can be [disabled completely](#reacttonoquestion)
 
 Variables:
 * `user`: The user, that sent the message
 
-##### wrongAnswer
+#### wrongAnswer
 The wrong answer was given for a question<br/>
 This message can be [disabled completely](#reacttowronganswer)
 
 Variables:
 * `user`: The user, that sent the message
 
-##### correctAnswer
+#### correctAnswer
 The correct answer was sent for a question
 
 Variables:
 * `user`: The user, that sent the message
 * `newQuestionIn`: The time until the next question will be asked
 
-##### questionTimedOut
+#### questionTimedOut
 The question timed out and can not be answered anymore
 
 Variables:
@@ -161,24 +161,24 @@ Variables:
 * `answer`: One valid answer for the question
 * `newQuestionIn`: The time until the next question will be asked
 
-##### commandScore
+#### commandScore
 Send the total score of the user, that send the command
 
 Variables:
 * `user`: The user, that sent the message
 * `scoreNumber`: The score of the user
 
-##### commandReset
+#### commandReset
 Message confirming the reset of all scores
 
-##### commandResetNobodyHasPoints
+#### commandResetNobodyHasPoints
 Message when loading all scores, but nobody has scores yet
 
-##### hours
+#### hours
 The text used when sending hours in a message
 
-##### minutes
+#### minutes
 The text used when sending minutes in a message
 
-##### seconds
+#### seconds
 The text used when sending seconds in a message
