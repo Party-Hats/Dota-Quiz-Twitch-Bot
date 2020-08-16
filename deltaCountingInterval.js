@@ -1,4 +1,7 @@
+const log = require("./log.js");
+
 function create(callback, intervalInSeconds) {
+  log.debug("Creating couting interval with seconds: " + intervalInSeconds);
   let obj = {
     _secondsRemaining: intervalInSeconds,
     _start: function() {
@@ -6,7 +9,9 @@ function create(callback, intervalInSeconds) {
     },
     _tick: function(that) {
       that._secondsRemaining--;
+      log.debug("Ticking with seconds remaining: " + that._secondsRemaining);
       if (that._secondsRemaining <= 0) {
+        log.debug("Executing callback as secondsRemaining reached 0");
         callback();
         that._secondsRemaining = intervalInSeconds;
       }

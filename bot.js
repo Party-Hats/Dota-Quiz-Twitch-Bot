@@ -38,7 +38,7 @@ function setup() {
   client.on('chat', onMessageHandler);
   client.on('connected', onConnectedHandler);
   client.connect().then(function () {
-    log.info(
+    log.debug(
         "All available questions:\n" + JSON.stringify(questions, null, " "));
 
     questionInterval = interval.create(ask, config.postQuestionIntervalInSeconds);
@@ -74,6 +74,8 @@ function ask() {
         + " seconds");
     currentTimeout = setTimeout(timeoutQuestion,
         config.questionTimeoutInSeconds * 1000);
+  } else {
+    log.debug("No timeout configured");
   }
 }
 
@@ -90,6 +92,7 @@ function timeoutQuestion() {
 
 function resetTimeout() {
   if (currentTimeout !== undefined) {
+    log.debug("Reset timeout");
     clearTimeout(currentTimeout);
     currentTimeout = undefined;
   }
@@ -97,12 +100,13 @@ function resetTimeout() {
 
 function onMessageHandler(target, context, message, self) {
   if (self) {
+    log.debug("Message was sent from self. Ignoring it: " + message);
     return;
   }
 
   let chatSender = context['display-name'].toLowerCase();
   if (resolveSpecialCommands(target, chatSender, message.trim())) {
-    // Message was a special command and not an answer
+    log.debug("Message was command. Skipping check for answer: " + message);
     return;
   }
 
@@ -111,17 +115,19 @@ function onMessageHandler(target, context, message, self) {
   }
 
   if (!running) {
-    log.info("Not reacting to message from user \"" + chatSender
+    log.debug("Not reacting to message from user \"" + chatSender
         + "\" as bot is disabled: " + message);
     return;
   }
 
-  if (Object.keys(currentQuestion).length === 0 || currentQuestion.answers
-      === null) {
+  if (Object.keys(currentQuestion).length === 0
+      || currentQuestion.answers === null) {
     if (config.reactToNoQuestion) {
       client.say(target, parseLocaleString(lang.noQuestion, {
         user: chatSender
       }));
+    } else {
+      log.debug("Not reacting to no question as it is disabled in the config");
     }
     return;
   }
@@ -131,6 +137,7 @@ function onMessageHandler(target, context, message, self) {
   answer = answer.substr(config.answerPrefix.length);
 
   if (currentQuestion.answers.includes(answer)) {
+    log.info("User \"" + chatSender + "\" sent the correct answer");
     client.say(target, parseLocaleString(lang.correctAnswer, {
       user: chatSender,
       newQuestionIn: timeConverter.forSeconds(questionInterval.getSecondsRemaining())
@@ -139,7 +146,7 @@ function onMessageHandler(target, context, message, self) {
     resetTimeout();
     currentQuestion = {};
   } else {
-    if (config.reactToAnswer) {
+    if (config.reactToWrongAnswer) {
       client.say(target, parseLocaleString(lang.wrongAnswer, {
         user: chatSender
       }));
@@ -153,6 +160,7 @@ function resolveSpecialCommands(channel, user, message) {
   }
   let comms = config.commands;
   if (comms.personalScore === message) {
+    log.info("User \"" + user + "\" sent command to get own score");
     store.readForUser(user, function (data) {
       client.say(channel, parseLocaleString(lang.commandScore, {
         user: user,
@@ -161,6 +169,7 @@ function resolveSpecialCommands(channel, user, message) {
     });
     return true;
   } else if (comms.currentQuestion === message) {
+    log.info("User \"" + user + "\" sent message to get current question");
     client.say(channel, parseLocaleString(lang.askQuestion, {
       question: currentQuestion.question,
       answerPrefix: config.answerPrefix
@@ -174,6 +183,7 @@ function resolveAdminCommands(channel, user, message) {
   let comms = config.adminCommands;
   if (comms.allScores === message) {
     if (config.channelAdmin === user) {
+      log.info("Admin user \"" + user + "\" sent command to get all scores");
       store.readAll(function (data) {
         _sendMultilineScores(channel, data);
       });
@@ -181,6 +191,7 @@ function resolveAdminCommands(channel, user, message) {
     }
   } else if (comms.reset === message) {
     if (config.channelAdmin === user) {
+      log.info("Admin user \"" + user + "\" sent command to reset all scores");
       store.resetStore(function (data) {
         client.say(channel, parseLocaleString(lang.commandReset, {}));
         _sendMultilineScores(channel, data);
@@ -189,6 +200,7 @@ function resolveAdminCommands(channel, user, message) {
     }
   } else if (comms.start === message) {
     if (config.channelAdmin === user) {
+      log.info("Admin user \"" + user + "\" sent command to start bot");
       running = true;
       client.say(channel,
           parseLocaleString("Starting Quiz bot. Question interval: "
@@ -196,21 +208,22 @@ function resolveAdminCommands(channel, user, message) {
             inter: timeConverter.forSeconds(config.postQuestionIntervalInSeconds),
             next: timeConverter.forSeconds(questionInterval.getSecondsRemaining())
           }));
-      log.info("Starting bot");
+      log.info("Started bot");
       return true;
     }
   } else if (comms.stop === message) {
     if (config.channelAdmin === user) {
+      log.info("Admin user \"" + user + "\" sent command to stop bot");
       running = false;
       client.say(channel,
           "Stopping Bot. Will not react to anything but commands");
-      log.info("Stopping bot");
+      log.info("Stopped bot");
       return false;
     }
   } else {
     return false;
   }
-  log.info("Invalid user tried to execute admin command. User: \""
+  log.warn("Invalid user tried to execute admin command. User: \""
       + user + "\"; Command: \"" + message + "\"");
   return true;
 }
@@ -221,6 +234,7 @@ function _sendMultilineScores(channel, data) {
         parseLocaleString(lang.commandResetNobodyHasPoints, {}));
   }
   for (const [key, value] of Object.entries(data)) {
+    log.debug("User \"" + key + "\" had " + value + " points");
     client.say(channel, parseLocaleString(lang.commandScore, {
       user: key,
       scoreNumber: value.score
