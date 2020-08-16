@@ -1,10 +1,13 @@
 {
-  "askQuestion": "${question} (Rate mit: ${answerPrefix}<Antwort?)",
+  "askQuestion": "${question} (Rate mit: ${answerPrefix}<Antwort>)",
   "noQuestion": "Tut mir leid ${user}. Aktuell ist keine Frage offen =(",
   "wrongAnswer": "Leider falsch ${user}. Versuch es nochmal",
-  "correctAnswer": "Sehr gut ${user}, richtige Anwort!",
-  "questionTimedOut": "Tja, leider zu lang gebraucht. Viel Glück bei der nächsten Frage",
+  "correctAnswer": "Sehr gut ${user}, richtige Anwort! Nächste Frage in: ${newQuestionIn}",
+  "questionTimedOut": "Tja, leider zu lang gebraucht. Viel Glück bei der nächsten Frage in ${newQuestionIn}",
   "commandScore": "${user} deine gesamte Punktzahl ist ${scoreNumber}",
   "commandReset": "Alle Punktzahlen werden zurückgesetzt. Hier der Punktstand bis hierhin:",
-  "commandResetNobodyHasPoints": "Bisher hat niemand Punkte gesammelt"
+  "commandResetNobodyHasPoints": "Bisher hat niemand Punkte gesammelt",
+  "hours": "Std",
+  "minutes": "Min",
+  "seconds": "Sek"
 }

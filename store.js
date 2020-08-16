@@ -1,5 +1,6 @@
 const locks = require('locks');
 const fs = require('fs');
+const log = require('./log.js');
 
 const storeLock = locks.createReadWriteLock();
 const storeFilePath = "store";
@@ -42,7 +43,7 @@ function writeToStore(user, updateWith) {
     userData.score = userData.score + updateWith;
     loadedStore[user] = userData;
     _setStore(loadedStore);
-    console.log("Saved to store with updated data for user \"" + user + "\": "
+    log.info("Saved to store with updated data for user \"" + user + "\": "
 				+ JSON.stringify(userData));
     storeLock.unlock();
   });
