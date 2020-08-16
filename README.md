@@ -6,7 +6,7 @@ When implementing multiple languages it is a requirement to always have german a
 
 New features can freely be tested in the chat of https://twitch.tv/dota_quiz
 
-# Install and run the bot
+## Install and run the bot
 
 Make sure `NodeJS` and `npm` are installed on your pc
 
@@ -17,6 +17,6 @@ Create a file `token` in the main directory that holds the oauth token for the u
 
 Execute `node bot.js` in the main directory to run the bot 
 
-# User Guide
+## User Guide
 
-TODO
+:wrench:
