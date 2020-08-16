@@ -4,13 +4,15 @@ const store = require('./store.js');
 const log = require('./log.js');
 const interval = require('./deltaCountingInterval.js');
 const timeConverter = require('./timeConverter.js');
+const random = require('./randomWithCooldown.js');
 
 const tokenFile = 'token';
 const config = JSON.parse(fs.readFileSync('config/config.json', "utf-8"));
-const client = new tmi.client(buildClientOpts());
 const questions = JSON.parse(fs.readFileSync('config/questions.json', "utf-8"));
 // Might later be extended to give the ability to choose between different locales
 const lang = JSON.parse(fs.readFileSync('lang/german.json', 'utf-8'));
+const client = new tmi.client(buildClientOpts());
+const questionDrawer = random.create(questions.length, config.questionCooldownPercent);
 
 let currentQuestion = {};
 let currentTimeout = undefined;
@@ -56,7 +58,7 @@ function ask() {
     return;
   }
 
-  currentQuestion = questions[Math.floor(Math.random() * questions.length)];
+  currentQuestion = questions[questionDrawer.draw()];
 
   let message = parseLocaleString(lang.askQuestion, {
     question: currentQuestion.question,
