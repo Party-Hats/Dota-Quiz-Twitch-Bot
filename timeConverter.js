@@ -12,10 +12,10 @@ function forSeconds(seconds) {
     ret += hrs + " " + lang.hours + " ";
   }
   if (mins > 0) {
-    ret += ("0" + date.getMinutes()).substr(-2) + " " + lang.minutes + " ";
+    ret += date.getMinutes() + " " + lang.minutes + " ";
   }
   if (secs > 0) {
-    ret += ("0" + date.getSeconds()).substr(-2) + " " + lang.seconds + " ";
+    ret += date.getSeconds() + " " + lang.seconds + " ";
   }
   ret = ret.substr(0, ret.length -1);
   return ret;

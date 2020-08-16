@@ -3,6 +3,7 @@
   "channelAdmin": "chris_wild",
   "postQuestionIntervalInSeconds": 20,
   "questionTimeoutInSeconds": 10,
+  "questionCooldownPercent": 80,
   "answerPrefix":"?",
   "reactToWrongAnswer": false,
   "reactToNoQuestion": false,
