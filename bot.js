@@ -2,6 +2,8 @@ const tmi = require('tmi.js');
 const fs = require('fs');
 const store = require('./store.js');
 const log = require('./log.js');
+const interval = require('./deltaCountingInterval.js');
+const timeConverter = require('./timeConverter.js');
 
 const tokenFile = 'token';
 const config = JSON.parse(fs.readFileSync('config/config.json', "utf-8"));
@@ -12,6 +14,7 @@ const lang = JSON.parse(fs.readFileSync('lang/german.json', 'utf-8'));
 
 let currentQuestion = {};
 let currentTimeout = undefined;
+let questionInterval;
 let running = false;
 
 setup();
@@ -36,7 +39,7 @@ function setup() {
     log.info(
         "All available questions:\n" + JSON.stringify(questions, null, " "));
 
-    setInterval(ask, config.postQuestionIntervalInSeconds * 1000);
+    questionInterval = interval.create(ask, config.postQuestionIntervalInSeconds);
   });
 }
 
@@ -77,7 +80,8 @@ function timeoutQuestion() {
   log.info("Question timed out. Resetting it");
   client.say(config.channelName, parseLocaleString(lang.questionTimedOut, {
     question: currentQuestion.question,
-    answer: currentQuestion.answers[0]
+    answer: currentQuestion.answers[0],
+    newQuestionIn: timeConverter.forSeconds(questionInterval.getSecondsRemaining())
   }));
   currentQuestion = {};
 }
@@ -126,7 +130,8 @@ function onMessageHandler(target, context, message, self) {
 
   if (currentQuestion.answers.includes(answer)) {
     client.say(target, parseLocaleString(lang.correctAnswer, {
-      user: chatSender
+      user: chatSender,
+      newQuestionIn: timeConverter.forSeconds(questionInterval.getSecondsRemaining())
     }));
     store.incrementStore(chatSender);
     resetTimeout();
@@ -183,8 +188,12 @@ function resolveAdminCommands(channel, user, message) {
   } else if (comms.start === message) {
     if (config.channelAdmin === user) {
       running = true;
-      client.say(channel, "Starting Bot. Question interval is "
-          + config.postQuestionIntervalInSeconds + "seconds");
+      client.say(channel,
+          parseLocaleString("Starting Quiz bot. Question interval: "
+              + "${inter}; Next question in ${next}", {
+            inter: timeConverter.forSeconds(config.postQuestionIntervalInSeconds),
+            next: timeConverter.forSeconds(questionInterval.getSecondsRemaining())
+          }));
       log.info("Starting bot");
       return true;
     }
