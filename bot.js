@@ -62,6 +62,7 @@ function ask() {
 
   let message = parseLocaleString(lang.askQuestion, {
     question: currentQuestion.question,
+    timeout: timeConverter.forSeconds(config.questionTimeoutInSeconds),
     answerPrefix: config.answerPrefix
   });
 
@@ -103,6 +104,8 @@ function onMessageHandler(target, context, message, self) {
     log.debug("Message was sent from self. Ignoring it: " + message);
     return;
   }
+
+  message = message.toLowerCase();
 
   let chatSender = context['display-name'].toLowerCase();
   if (resolveSpecialCommands(target, chatSender, message.trim())) {
@@ -159,7 +162,7 @@ function resolveSpecialCommands(channel, user, message) {
     return true;
   }
   let comms = config.commands;
-  if (comms.personalScore === message) {
+  if (comms.personalScore.toLowerCase() === message) {
     log.info("User \"" + user + "\" sent command to get own score");
     store.readForUser(user, function (data) {
       client.say(channel, parseLocaleString(lang.commandScore, {
@@ -168,12 +171,23 @@ function resolveSpecialCommands(channel, user, message) {
       }));
     });
     return true;
-  } else if (comms.currentQuestion === message) {
+  } else if (comms.currentQuestion.toLowerCase() === message) {
     log.info("User \"" + user + "\" sent message to get current question");
-    client.say(channel, parseLocaleString(lang.askQuestion, {
-      question: currentQuestion.question,
-      answerPrefix: config.answerPrefix
-    }));
+    if (Object.keys(currentQuestion).length === 0
+        || currentQuestion.answers === null) {
+      if (config.reactToNoQuestion) {
+        client.say(target, parseLocaleString(lang.noQuestion, {
+          user: chatSender
+        }));
+      } else {
+        log.debug("Not reacting to no question as it is disabled in the config");
+      }
+    } else {
+      client.say(channel, parseLocaleString(lang.askQuestion, {
+        question: currentQuestion.question,
+        answerPrefix: config.answerPrefix
+      }));
+    }
     return true;
   }
   return false;
@@ -181,7 +195,7 @@ function resolveSpecialCommands(channel, user, message) {
 
 function resolveAdminCommands(channel, user, message) {
   let comms = config.adminCommands;
-  if (comms.allScores === message) {
+  if (comms.allScores.toLowerCase() === message) {
     if (config.channelAdmin === user) {
       log.info("Admin user \"" + user + "\" sent command to get all scores");
       store.readAll(function (data) {
@@ -189,7 +203,7 @@ function resolveAdminCommands(channel, user, message) {
       });
       return true;
     }
-  } else if (comms.reset === message) {
+  } else if (comms.reset.toLowerCase() === message) {
     if (config.channelAdmin === user) {
       log.info("Admin user \"" + user + "\" sent command to reset all scores");
       store.resetStore(function (data) {
@@ -198,7 +212,7 @@ function resolveAdminCommands(channel, user, message) {
       });
       return true;
     }
-  } else if (comms.start === message) {
+  } else if (comms.start.toLowerCase() === message) {
     if (config.channelAdmin === user) {
       log.info("Admin user \"" + user + "\" sent command to start bot");
       running = true;
@@ -211,7 +225,7 @@ function resolveAdminCommands(channel, user, message) {
       log.info("Started bot");
       return true;
     }
-  } else if (comms.stop === message) {
+  } else if (comms.stop.toLowerCase() === message) {
     if (config.channelAdmin === user) {
       log.info("Admin user \"" + user + "\" sent command to stop bot");
       running = false;
@@ -244,4 +258,5 @@ function _sendMultilineScores(channel, data) {
 
 function onConnectedHandler(addr, port) {
   log.info(`* Connected to ${addr}:${port}`);
+  log.info("Bot running. Make sure to start it using \"" + config.adminCommands.start + "\"");
 }
