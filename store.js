@@ -6,20 +6,25 @@ const storeLock = locks.createReadWriteLock();
 const storeFilePath = "store";
 
 if (!fs.existsSync(storeFilePath)) {
+  log.info("No store file found. Initiating now");
   storeLock.writeLock(function() {
     _setStore({});
+    log.info("Initialized store file");
   });
 }
 
 function readAll(callback) {
+  log.debug("Start reading all scores from store");
   storeLock.readLock(function() {
     let store = _getStore();
     storeLock.unlock();
     callback(store);
+    log.debug("Read all scores from store");
   })
 }
 
 function readForUser(user, callback) {
+  log.debug("Start reading scores for user \"" + user + "\"");
   storeLock.readLock(function() {
     let userData = _getStore()[user];
     storeLock.unlock();
@@ -28,10 +33,13 @@ function readForUser(user, callback) {
     } else {
       callback(userData.score)
     }
+    log.debug("Read all data for user \"" + user + "\" from store: "
+        + JSON.stringify(userData));
   });
 }
 
 function writeToStore(user, updateWith) {
+  log.debug("Start writing to store for user \"" + user + "\"");
   storeLock.writeLock(function() {
     let loadedStore = _getStore();
     let userData = loadedStore[user];
@@ -54,12 +62,14 @@ function incrementStore(user) {
 }
 
 function resetStore(callback) {
+  log.debug("Start resetting store")
   storeLock.writeLock(function() {
     if (callback) {
       callback(_getStore());
     }
     _setStore({});
     storeLock.unlock();
+    log.debug("Reset store");
   });
 }
 

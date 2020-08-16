@@ -6,7 +6,7 @@ function currentTimeString() {
 	let hours = ("0" + date_ob.getHours()).slice(-2);
 	let minutes = ("0" + date_ob.getMinutes()).slice(-2);
 	let seconds = ("0" + date_ob.getSeconds()).slice(-2);
-	// date & time in YYYY-MM-DD HH:MM:SS format
+	// YYYY-MM-DD HH:MM:SS
 	return year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds;
 }
 

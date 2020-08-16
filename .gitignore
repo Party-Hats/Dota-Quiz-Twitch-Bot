@@ -12,15 +12,12 @@
 # Mac
 .DS_Store
 
-# Maven
-log/
-target/
-
 # NodeJS
 node_modules/
 
 # Secrets
 token
-
 # persistance
 store
+# Logs
+log/
