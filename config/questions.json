@@ -21,5 +21,24 @@
       "110sekunden",
       "110seconds"
     ]
+  },
+  {
+    "question": "In welchen Jahr fand das erste TI statt?",
+    "answers": [
+      "2011"
+    ]
+  },
+  {
+    "question": "Wie viele HP gibt 1 Punkt Stärke? (Patch 7.27)",
+    "answers": [
+      "20"
+    ]
+  },
+  {
+    "question": "Wer gewann die erste Ausgabe des TI?",
+    "answers": [
+      "navi",
+      "natusvincere"
+    ]
   }
 ]
