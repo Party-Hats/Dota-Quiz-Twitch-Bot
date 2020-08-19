@@ -6,7 +6,6 @@ const auth = require('./bin/auth')
 
 const logger = require('morgan');
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
 const listRouter = require('./routes/list');
 const addRouter = require('./routes/add');
 
@@ -26,7 +25,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/list', listRouter);
 app.use('/add', addRouter);
 
