@@ -2,7 +2,9 @@ extends layout
 
 block content
     include main
-    h1= 'Alle aktuellen Fragen'
+    h1= 'Alle aktuellen Fragen (Gesamt: '
+        = questions.length
+        = ')'
     ul
       for question in questions
           li
