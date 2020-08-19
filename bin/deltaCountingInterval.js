@@ -4,6 +4,7 @@ function create(callback, intervalInSeconds) {
   log.debug("Creating couting interval with seconds: " + intervalInSeconds);
   let obj = {
     _secondsRemaining: intervalInSeconds,
+    _internalInterval: undefined,
     _start: function() {
       setInterval(this._tick, 1000, this);
     },
@@ -20,6 +21,9 @@ function create(callback, intervalInSeconds) {
       // As the current second is already running,
       // its more accurate to to subtract that second
       return this._secondsRemaining - 1;
+    },
+    clear: function() {
+      clearInterval(this._internalInterval);
     }
   };
   obj._start();

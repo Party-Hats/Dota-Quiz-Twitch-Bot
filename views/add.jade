@@ -1,0 +1,64 @@
+extends layout
+
+block content
+    include main
+    script.
+        function addAnswer() {
+          let newDiv = document.createElement('div');
+          newDiv.classList.add("input");
+          newDiv.innerHTML = document.getElementById('newAnswer').innerHTML;
+          document.getElementById('form').append(newDiv);
+        }
+        function validateForm() {
+          let errorsList = document.getElementById('errors').firstChild;
+          while (errorsList.firstChild) {
+            errorsList.removeChild(errorsList.firstChild);
+          }
+          // Validate
+          let errors = [];
+          let form = document.getElementById('form');
+          let elements = form.elements;
+          console.log(elements);
+          for (let i = 0; i < elements.length; i++) {
+            let element = elements[i];
+            if (element.type === "text") {
+              if (element.name === "answers") {
+                let value = element.value;
+                console.log(value);
+                if (value.match(/\s/g) !== null) {
+                  errors.push('<div>Antwort darf keine Leerzeichen enthalten: "<i>' + value + '</i>"</div>')
+                }
+                if (value.toLowerCase() !== value) {
+                  errors.push('<div>Antwort darf nur Kleinbuchstaben enthalten: "<i>' + value + '</i>"</div>');
+                }
+              }
+            }
+          }
+          console.log(errors);
+          if (errors.length === 0) {
+            return true;
+          }
+
+          errors.forEach(function(error) {
+            let li = document.createElement('li');
+            li.innerHTML = error;
+            errorsList.appendChild(li);
+          });
+          return false;
+        }
+
+    h1= "Dota Quiz Fragen"
+    p Bitte hier neue Fragen eintragen
+
+    button(onclick='addAnswer()') Weitere Antwort
+    form(name="add-question", method="post", onsubmit="return validateForm()")#form
+        div.actions
+            input(type="submit", value="Speichern")
+        div.input
+            span.label Frage
+            input(type="text", name="question", size=40)
+        div.input#newAnswer
+            span.label Antwort
+            input(type="text", name="answers", size=40)
+    #errors
+        ul
