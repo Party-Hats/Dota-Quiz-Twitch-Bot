@@ -5,15 +5,13 @@ const log = require('./log.js');
 const timeConverter = require('./timeConverter.js');
 const questions = require('./questions.js');
 
-const tokenFile = 'token';
-const config = JSON.parse(fs.readFileSync('config/config.json', "utf-8"));
+const tokenFile = '../token';
+const config = JSON.parse(fs.readFileSync('../config/config.json', "utf-8"));
 // Might later be extended to give the ability to choose between different locales
-const lang = JSON.parse(fs.readFileSync('lang/german.json', 'utf-8'));
+const lang = JSON.parse(fs.readFileSync('../lang/german.json', 'utf-8'));
 const client = new tmi.client(buildClientOpts());
 
 let running = false;
-
-setup();
 
 function buildClientOpts() {
   let token = fs.readFileSync(tokenFile) + "";
@@ -70,7 +68,8 @@ function timeoutQuestion(timedOutQuestion) {
   client.say(config.channelName, parseLocaleString(lang.questionTimedOut, {
     question: timedOutQuestion.question,
     answer: timedOutQuestion.answers[0],
-    newQuestionIn: timeConverter.forSeconds(questions.getSecondsUntilNextQuestion())
+    newQuestionIn: timeConverter.forSeconds(
+        questions.getSecondsUntilNextQuestion())
   }));
 }
 
@@ -115,7 +114,8 @@ function onMessageHandler(target, context, message, self) {
     log.info("User \"" + chatSender + "\" sent the correct answer");
     client.say(target, parseLocaleString(lang.correctAnswer, {
       user: chatSender,
-      newQuestionIn: timeConverter.forSeconds(questions.getSecondsUntilNextQuestion())
+      newQuestionIn: timeConverter.forSeconds(
+          questions.getSecondsUntilNextQuestion())
     }));
     store.incrementStore(chatSender);
   } else {
@@ -149,7 +149,8 @@ function resolveSpecialCommands(channel, user, message) {
           user: chatSender
         }));
       } else {
-        log.debug("Not reacting to no question as it is disabled in the config");
+        log.debug(
+            "Not reacting to no question as it is disabled in the config");
       }
     } else {
       client.say(channel, parseLocaleString(lang.askQuestion, {
@@ -188,8 +189,10 @@ function resolveAdminCommands(channel, user, message) {
       client.say(channel,
           parseLocaleString("Starting Quiz bot. Question interval: "
               + "${inter}; Next question in ${next}", {
-            inter: timeConverter.forSeconds(config.postQuestionIntervalInSeconds),
-            next: timeConverter.forSeconds(questions.getSecondsUntilNextQuestion())
+            inter: timeConverter.forSeconds(
+                config.postQuestionIntervalInSeconds),
+            next: timeConverter.forSeconds(
+                questions.getSecondsUntilNextQuestion())
           }));
       log.info("Started bot");
       return true;
@@ -227,5 +230,9 @@ function _sendMultilineScores(channel, data) {
 
 function onConnectedHandler(addr, port) {
   log.info(`* Connected to ${addr}:${port}`);
-  log.info("Bot running. Make sure to start it using \"" + config.adminCommands.start + "\"");
+  log.info(
+      "Bot running. Make sure to start it using \"" + config.adminCommands.start
+      + "\"");
 }
+
+module.exports.setup = setup;

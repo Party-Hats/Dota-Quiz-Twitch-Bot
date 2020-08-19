@@ -1,0 +1,23 @@
+body {
+  padding: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+* {
+  color: aliceblue;
+  background-color: black;
+}
+
+input {
+  margin: 5px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#main {
+  font: 60px Calibri;
+  font-weight: bold;
+  color: darkgreen;
+}
