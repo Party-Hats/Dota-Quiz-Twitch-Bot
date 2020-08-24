@@ -119,6 +119,8 @@ function onMessageHandler(target, context, message, self) {
     }));
     store.incrementStore(chatSender);
   } else {
+    log.debug("User \"" + chatSender + "\" sent wrong answer: \"" + message
+        + "\". Parsed: \"" + answer + "\"");
     if (config.reactToWrongAnswer) {
       client.say(target, parseLocaleString(lang.wrongAnswer, {
         user: chatSender
