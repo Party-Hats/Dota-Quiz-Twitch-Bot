@@ -1,44 +1,44 @@
 [
-  {
-    "question": "Was ist Centaur Warrunners base strength?",
-    "answers": [
-      "27"
-    ]
-  },
-  {
-    "question": "Wie viel Mana kostet Witch Doctors Death Ward?",
-    "answers": [
-      "200",
-      "200mana"
-    ]
-  },
-  {
-    "question": "Welchen Cooldown hat Snapfires Mortimer Kisses?",
-    "answers": [
-      "110s",
-      "110",
-      "110sec",
-      "110sekunden",
-      "110seconds"
-    ]
-  },
-  {
-    "question": "In welchen Jahr fand das erste TI statt?",
-    "answers": [
-      "2011"
-    ]
-  },
-  {
-    "question": "Wie viele HP gibt 1 Punkt Stärke? (Patch 7.27)",
-    "answers": [
-      "20"
-    ]
-  },
-  {
-    "question": "Wer gewann die erste Ausgabe des TI?",
-    "answers": [
-      "navi",
-      "natusvincere"
-    ]
-  }
+ {
+  "question": "Was ist Centaur Warrunners base strength?",
+  "answers": [
+   "27"
+  ]
+ },
+ {
+  "question": "Wie viel Mana kostet Witch Doctors Death Ward?",
+  "answers": [
+   "200",
+   "200mana"
+  ]
+ },
+ {
+  "question": "Welchen Cooldown hat Snapfires Mortimer Kisses?",
+  "answers": [
+   "110s",
+   "110",
+   "110sec",
+   "110sekunden",
+   "110seconds"
+  ]
+ },
+ {
+  "question": "In welchen Jahr fand das erste TI statt?",
+  "answers": [
+   "2011"
+  ]
+ },
+ {
+  "question": "Wie viele HP gibt 1 Punkt Stärke? (Patch 7.27)",
+  "answers": [
+   "20"
+  ]
+ },
+ {
+  "question": "Wer gewann die erste Ausgabe des TI?",
+  "answers": [
+   "navi",
+   "natusvincere"
+  ]
+ }
 ]

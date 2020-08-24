@@ -6,7 +6,7 @@ function create(callback, intervalInSeconds) {
     _secondsRemaining: intervalInSeconds,
     _internalInterval: undefined,
     _start: function() {
-      setInterval(this._tick, 1000, this);
+      this._internalInterval = setInterval(this._tick, 1000, this);
     },
     _tick: function(that) {
       that._secondsRemaining--;
@@ -23,6 +23,7 @@ function create(callback, intervalInSeconds) {
       return this._secondsRemaining - 1;
     },
     clear: function() {
+      log.debug("Clearing interval");
       clearInterval(this._internalInterval);
     }
   };
