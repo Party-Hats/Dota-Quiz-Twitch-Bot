@@ -213,7 +213,15 @@ function resolveAdminCommands(channel, user, message) {
       client.say(channel,
           "Stopping Bot. Will not react to anything but commands");
       log.info("Stopped bot");
-      return false;
+      return true;
+    }
+  } else if(comms.topScores.toLowerCase() === message) {
+    if (config.channelAdmin === user) {
+      log.info("Admin user \"" + user + "\" sent command to get top scores");
+      store.readAll(function (data) {
+        _sendMultilineScores(channel, data.slice(0, 10));
+      });
+      return true;
     }
   } else {
     return false;
