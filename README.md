@@ -55,6 +55,7 @@ Note, that all commands are case-insensitive, meaning, that for example `#score`
 * `#stopQuiz` :pushpin:: Stops the bots feature to post questions in chat. It will still react to all commands (user or admin)
 * `#totalScore` :pushpin:: Prints the current scores for ALL users, that have collected points to the chat
 * `#reset` :pushpin:: Resets the saved points for ALL users. Prints them all to the chat before clearing it
+* `#topTen` :pushpin:: Prints the scores of the ten users with the most points
 
 ## Configuration
 
@@ -104,6 +105,9 @@ See [Admin Commands `#totalScore`](#admin-commands)
 
 #### adminCommands.reset
 See [Admin Commands `#reset`](#admin-commands)
+
+#### adminCommands.topScores
+See [Admin Commands `#topTen`](#admin-commands)
 
 ### About questions and answers
 Currently all questions are build like this:
@@ -167,6 +171,7 @@ Send the total score of the user, that send the command
 Variables:
 * `user`: The user, that sent the message
 * `scoreNumber`: The score of the user
+* `userRank`: The rank of the current compared to all others
 
 #### commandReset
 Message confirming the reset of all scores

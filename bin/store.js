@@ -18,20 +18,43 @@ function readAll(callback) {
   storeLock.readLock(function() {
     let store = _getStore();
     storeLock.unlock();
-    callback(store);
+    callback(_orderedScoreList(store));
     log.debug("Read all scores from store");
   })
+}
+
+/**
+ * TODO This is not great. It has to be reworked when moving the scores to a db: #29
+ * @private
+ */
+function _orderedScoreList(storeJson) {
+  let ret = [];
+  for (let username in storeJson) {
+    ret.push({
+      "user": username,
+      "score": storeJson[username].score
+    });
+  }
+  ret.sort(function (a, b) {
+    return b.score - a.score;
+  })
+  return ret;
 }
 
 function readForUser(user, callback) {
   log.debug("Start reading scores for user \"" + user + "\"");
   storeLock.readLock(function() {
-    let userData = _getStore()[user];
+    let currentStore = _getStore();
     storeLock.unlock();
+    let userData = currentStore[user];
+    let ordered = _orderedScoreList(currentStore);
     if (!userData) {
-      callback(0);
+      callback(0, ordered.length + 1);
     } else {
-      callback(userData.score)
+      let index = ordered.findIndex(function(item, i) {
+        return item.user === user;
+      });
+      callback(userData.score, index + 1);
     }
     log.debug("Read all data for user \"" + user + "\" from store: "
         + JSON.stringify(userData));
@@ -65,7 +88,7 @@ function resetStore(callback) {
   log.debug("Start resetting store")
   storeLock.writeLock(function() {
     if (callback) {
-      callback(_getStore());
+      callback(_orderedScoreList(_getStore()));
     }
     _setStore({});
     storeLock.unlock();

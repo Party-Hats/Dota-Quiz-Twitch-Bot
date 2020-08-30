@@ -18,6 +18,7 @@
     "start": "#startQuiz",
     "stop": "#stopQuiz",
     "allScores": "#totalScore",
-    "reset": "#reset"
+    "reset": "#reset",
+    "topScores": "#topten"
   }
 }
