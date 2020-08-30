@@ -1,7 +1,7 @@
 {
   "channelName": "dota_quiz",
   "channelAdmin": "chris_wild",
-  "postQuestionIntervalInSeconds": 20,
+  "postQuestionIntervalInSeconds": 360,
   "questionTimeoutInSeconds": 60,
   "questionCooldownPercent": 80,
   "answerPrefix":"?",
