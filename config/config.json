@@ -1,14 +1,14 @@
 {
-  "channelName": "n4ppo_sc2",
-  "channelAdmin": "n4ppo_sc2",
-  "postQuestionIntervalInSeconds": 60,
-  "questionTimeoutInSeconds": 40,
+  "channelName": "dota_quiz",
+  "channelAdmin": "chris_wild",
+  "postQuestionIntervalInSeconds": 360,
+  "questionTimeoutInSeconds": 60,
   "questionCooldownPercent": 80,
   "answerPrefix":"?",
   "reactToWrongAnswer": false,
   "reactToNoQuestion": false,
   "identity": {
-    "username": "n4ppo_sc2"
+    "username": "dota_quiz"
   },
   "commands": {
     "personalScore": "#score",
