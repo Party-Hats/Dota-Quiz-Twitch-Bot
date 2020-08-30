@@ -30,11 +30,17 @@ function setup() {
   client.on('chat', onMessageHandler);
   client.on('connected', onConnectedHandler);
   client.connect().then(function () {
-    questions.initWithInterval(
+    try {
+      questions.initWithInterval(
         ask,
         config.postQuestionIntervalInSeconds,
         config.questionTimeoutInSeconds,
         config.questionCooldownPercent);
+    } catch (e) {
+      log.error(e);
+      client.disconnect();
+      process.exit(1);
+    }
   });
 }
 
@@ -47,7 +53,7 @@ function parseLocaleString(message, parameterMap) {
 
 function ask() {
   if (!running) {
-    log.info("Bot is not running. Skipping ask question");
+    log.debug("Bot is not running. Skipping ask question");
     return;
   }
 
@@ -202,6 +208,12 @@ function resolveAdminCommands(channel, user, message) {
               }));
           log.info("Started bot");
           break;
+        case "topScores":
+          log.info("Admin user \"" + user + "\" sent command to get top scores");
+          store.readAll(function (data) {
+            _sendMultilineScores(channel, data.slice(0, 10));
+          });
+          break;
         case "stop":
           log.info("Admin user \"" + user + "\" sent command to stop bot");
           running = false;
@@ -223,15 +235,19 @@ function resolveAdminCommands(channel, user, message) {
 }
 
 function _sendMultilineScores(channel, data) {
-  if (Object.keys(data).length === 0) {
+  if (data.length === 0) {
     client.say(channel,
         parseLocaleString(lang.commandResetNobodyHasPoints, {}));
   }
-  for (const [key, value] of Object.entries(data)) {
-    log.debug("User \"" + key + "\" had " + value + " points");
+  for (let i = 0; i < data.length; i++) {
+    let user = data[i].user;
+    let score = data[i].score;
+    let rank = i + 1;
+    log.debug("User \"" + user + "\" had " + score + " points with rank " + rank);
     client.say(channel, parseLocaleString(lang.commandScore, {
-      user: key,
-      scoreNumber: value.score
+      "user": user,
+      "scoreNumber": score,
+      "userRank": rank
     }));
   }
 }
