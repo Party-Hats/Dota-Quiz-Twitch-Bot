@@ -30,11 +30,17 @@ function setup() {
   client.on('chat', onMessageHandler);
   client.on('connected', onConnectedHandler);
   client.connect().then(function () {
-    questions.initWithInterval(
+    try {
+      questions.initWithInterval(
         ask,
         config.postQuestionIntervalInSeconds,
         config.questionTimeoutInSeconds,
         config.questionCooldownPercent);
+    } catch (e) {
+      log.error(e);
+      client.disconnect();
+      process.exit(1);
+    }
   });
 }
 

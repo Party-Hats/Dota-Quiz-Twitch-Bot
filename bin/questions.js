@@ -30,6 +30,9 @@ function refreshQuestions() {
 
 function _doInit() {
   questions = JSON.parse(fs.readFileSync(questionsFilePath, "utf-8"));
+  if (questions.length == 0) {
+    throw "There were no questions found in the configuration!";
+  }
   questionDrawer = random.create(questions.length, _cooldownPercent);
   log.info("Total loaded questions: " + questions.length);
   log.debug("All available questions:\n"
