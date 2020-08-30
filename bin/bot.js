@@ -53,7 +53,7 @@ function parseLocaleString(message, parameterMap) {
 
 function ask() {
   if (!running) {
-    log.info("Bot is not running. Skipping ask question");
+    log.debug("Bot is not running. Skipping ask question");
     return;
   }
 
@@ -142,10 +142,11 @@ function resolveSpecialCommands(channel, user, message) {
   let comms = config.commands;
   if (comms.personalScore.toLowerCase() === message) {
     log.info("User \"" + user + "\" sent command to get own score");
-    store.readForUser(user, function (data) {
+    store.readForUser(user, function (data, rank) {
       client.say(channel, parseLocaleString(lang.commandScore, {
         user: user,
-        scoreNumber: data
+        scoreNumber: data,
+        userRank: rank
       }));
     });
     return true;
@@ -223,15 +224,19 @@ function resolveAdminCommands(channel, user, message) {
 }
 
 function _sendMultilineScores(channel, data) {
-  if (Object.keys(data).length === 0) {
+  if (data.length === 0) {
     client.say(channel,
         parseLocaleString(lang.commandResetNobodyHasPoints, {}));
   }
-  for (const [key, value] of Object.entries(data)) {
-    log.debug("User \"" + key + "\" had " + value + " points");
+  for (let i = 0; i < data.length; i++) {
+    let user = data[i].user;
+    let score = data[i].score;
+    let rank = i + 1;
+    log.debug("User \"" + user + "\" had " + score + " points with rank " + rank);
     client.say(channel, parseLocaleString(lang.commandScore, {
-      user: key,
-      scoreNumber: value.score
+      "user": user,
+      "scoreNumber": score,
+      "userRank": rank
     }));
   }
 }
