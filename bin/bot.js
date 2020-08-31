@@ -143,10 +143,11 @@ function resolveSpecialCommands(channel, user, message) {
   switch(comms.get(message)) {
     case "personalScore":
       log.info("User \"" + user + "\" sent command to get own score");
-      store.readForUser(user, function (data) {
+      store.readForUser(user, function (data, rank) {
         client.say(channel, parseLocaleString(lang.commandScore, {
           user: user,
-          scoreNumber: data
+          scoreNumber: data,
+          userRank: rank
         }));
       });
       return true;
