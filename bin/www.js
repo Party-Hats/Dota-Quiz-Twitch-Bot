@@ -3,7 +3,7 @@
 /**
  * Module dependencies.
  */
-const app = require('bin/app');
+const app = require('app');
 const debug = require('debug')('twitchbot:server');
 const http = require('http');
 
