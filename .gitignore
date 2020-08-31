@@ -21,3 +21,5 @@ token
 store
 # Logs
 log/
+# Temporary persistance files
+*.tmp

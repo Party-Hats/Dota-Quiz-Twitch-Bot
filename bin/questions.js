@@ -4,6 +4,9 @@ const random = require('bin/randomWithCooldown');
 const interval = require('bin/deltaCountingInterval');
 const questionsFilePath = 'config/questions.json';
 
+const questionDrawerName = "questionsRandom";
+const questionDrawerPersistencePath = questionDrawerName + ".tmp";
+
 let _askCallback;
 let _intervalSec;
 let _timeoutSec;
@@ -15,7 +18,8 @@ let currentQuestion = {};
 let currentTimeout = undefined;
 let questionInterval;
 
-function initWithInterval(askCallback, intervalSec, timeoutSec, cooldownPercent) {
+function initWithInterval(askCallback, intervalSec, timeoutSec,
+    cooldownPercent) {
   _askCallback = askCallback;
   _intervalSec = intervalSec;
   _timeoutSec = timeoutSec;
@@ -28,12 +32,30 @@ function refreshQuestions() {
   _doInit();
 }
 
+function _doInitQuestionDrawer() {
+  if (fs.existsSync(questionDrawerPersistencePath)) {
+    let questionDrawerFromPersistence = JSON.parse(
+        fs.readFileSync(questionDrawerPersistencePath, 'UTF-8'));
+    questionDrawer = random.create(questions.length, _cooldownPercent,
+        questionDrawerFromPersistence);
+    fs.unlink(questionDrawerPersistencePath, function (err) {
+      if (err) {
+        throw err;
+      }
+      log.info("Deleted temporary questionDrawer persistence file: "
+          + questionDrawerPersistencePath);
+    })
+  } else {
+    questionDrawer = random.create(questions.length, _cooldownPercent);
+  }
+}
+
 function _doInit() {
   questions = JSON.parse(fs.readFileSync(questionsFilePath, "utf-8"));
-  if (questions.length == 0) {
+  if (questions.length === 0) {
     throw "There were no questions found in the configuration!";
   }
-  questionDrawer = random.create(questions.length, _cooldownPercent);
+  _doInitQuestionDrawer()
   log.info("Total loaded questions: " + questions.length);
   log.debug("All available questions:\n"
       + JSON.stringify(questions, null, " "));
@@ -60,11 +82,11 @@ function newQuestion(callback) {
       retries--;
       log.debug("Error when loading current question. Retrying. " + e);
     }
-  } while(error && retries > 0)
+  } while (error && retries > 0)
 
   if (_timeoutSec > 0) {
     log.info("Question will timeout in " + _timeoutSec + " seconds");
-    currentTimeout = setTimeout(function() {
+    currentTimeout = setTimeout(function () {
       log.info("Question timed out. Resetting it");
       let timedOutQuestion = currentQuestion;
       _doTimeoutQuestion();
@@ -134,6 +156,13 @@ function getCurrentQuestion() {
 function getAllQuestions() {
   return questions;
 }
+
+process.on("SIGINT", function () {
+  fs.writeFileSync(questionDrawerPersistencePath,
+      JSON.stringify(questionDrawer.getDrawnNums()));
+  log.info("Successfully persisted question drawer");
+  process.exit(0);
+});
 
 module.exports.initWithInterval = initWithInterval;
 module.exports.refreshQuestions = refreshQuestions;
