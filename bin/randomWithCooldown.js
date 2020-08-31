@@ -1,4 +1,4 @@
-const log = require("./log.js");
+const log = require("bin/log");
 
 function create(maxExcluded, cooldownPercent) {
   let cooldownSize = Math.ceil(maxExcluded * (cooldownPercent / 100));

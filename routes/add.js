@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const questions = require('../bin/questions.js');
+const questions = require('bin/questions.js');
 
 router.get('/', function (req, res, next) {
   res.render('add', {});

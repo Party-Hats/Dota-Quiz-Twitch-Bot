@@ -13,7 +13,7 @@ block content
                   button(type='submit', style='color: red; border: none;', title='Löschen') X
                 = ' '
                 = question.question
-                input(type="hidden", name="toDelete", value="#{question.question}")
+                input(type="hidden", name="toDelete", value=question.question)
           ul
             for answer in question.answers
                 li= answer

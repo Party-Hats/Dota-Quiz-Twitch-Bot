@@ -1,9 +1,9 @@
 const locks = require('locks');
 const fs = require('fs');
-const log = require('./log.js');
+const log = require('bin/log');
 
 const storeLock = locks.createReadWriteLock();
-const storeFilePath = "../store";
+const storeFilePath = "store";
 
 if (!fs.existsSync(storeFilePath)) {
   log.info("No store file found. Initiating now");

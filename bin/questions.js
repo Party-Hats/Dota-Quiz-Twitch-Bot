@@ -1,8 +1,8 @@
 const fs = require('fs');
-const log = require('./log.js');
-const random = require('./randomWithCooldown.js');
-const interval = require('./deltaCountingInterval.js');
-const questionsFilePath = '../config/questions.json';
+const log = require('bin/log');
+const random = require('bin/randomWithCooldown');
+const interval = require('bin/deltaCountingInterval');
+const questionsFilePath = 'config/questions.json';
 
 let _askCallback;
 let _intervalSec;

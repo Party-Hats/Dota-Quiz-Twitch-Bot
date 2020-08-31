@@ -15,7 +15,8 @@ To install all dependencies run this in the main folder of the project:
 
 Create a file `token` in the main directory that holds the oauth token for the user that posts in twitch chat.
 
-Navigate into the folder `bin` and execute `node www`
+Execute this command to run the bot:
+`npm start`
 
 ## User Guide
 
