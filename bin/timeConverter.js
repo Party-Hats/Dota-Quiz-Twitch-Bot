@@ -1,6 +1,6 @@
 const fs = require('fs');
-const log = require('./log.js');
-const lang = JSON.parse(fs.readFileSync('../lang/german.json', 'utf-8'));
+const log = require('bin/log');
+const lang = JSON.parse(fs.readFileSync('lang/german.json', 'utf-8'));
 
 function forSeconds(seconds) {
   log.debug("Parsing time for seconds: " + seconds);

@@ -1,14 +1,14 @@
 const tmi = require('tmi.js');
 const fs = require('fs');
-const store = require('./store.js');
-const log = require('./log.js');
-const timeConverter = require('./timeConverter.js');
-const questions = require('./questions.js');
+const store = require('bin/store');
+const log = require('bin/log');
+const timeConverter = require('bin/timeConverter');
+const questions = require('bin/questions');
 
-const tokenFile = '../token';
-const config = JSON.parse(fs.readFileSync('../config/config.json', "utf-8"));
+const tokenFile = 'token';
+const config = JSON.parse(fs.readFileSync('config/config.json', "utf-8"));
 // Might later be extended to give the ability to choose between different locales
-const lang = JSON.parse(fs.readFileSync('../lang/german.json', 'utf-8'));
+const lang = JSON.parse(fs.readFileSync('lang/german.json', 'utf-8'));
 const client = new tmi.client(buildClientOpts());
 
 let running = false;

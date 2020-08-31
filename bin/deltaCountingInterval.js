@@ -1,4 +1,4 @@
-const log = require("./log.js");
+const log = require("bin/log");
 
 function create(callback, intervalInSeconds) {
   log.debug("Creating couting interval with seconds: " + intervalInSeconds);

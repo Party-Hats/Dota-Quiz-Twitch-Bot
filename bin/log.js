@@ -1,8 +1,8 @@
-const utils = require('./utils.js');
+const utils = require('bin/utils');
 const rfs = require("rotating-file-stream");
 
-const infoLogPath = '../log/info.log';
-const debugLogPath = '../log/debug.log';
+const infoLogPath = 'log/info.log';
+const debugLogPath = 'log/debug.log';
 
 const infoLog = rfs.createStream(infoLogPath, {
   size: "10M",

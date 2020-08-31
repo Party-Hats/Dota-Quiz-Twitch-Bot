@@ -3,7 +3,7 @@
 /**
  * Module dependencies.
  */
-const app = require('../app');
+const app = require('bin/app');
 const debug = require('debug')('twitchbot:server');
 const http = require('http');
 
@@ -31,7 +31,7 @@ server.on('listening', onListening);
  */
 
 function normalizePort(val) {
-  var port = parseInt(val, 10);
+  let port = parseInt(val, 10);
 
   if (isNaN(port)) {
     // named pipe
@@ -55,7 +55,7 @@ function onError(error) {
     throw error;
   }
 
-  var bind = typeof port === 'string'
+  let bind = typeof port === 'string'
       ? 'Pipe ' + port
       : 'Port ' + port;
 
@@ -85,10 +85,3 @@ function onListening() {
       : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
-
-/**
- * Start bot
- */
-
-let bot = require('./bot.js');
-bot.setup();

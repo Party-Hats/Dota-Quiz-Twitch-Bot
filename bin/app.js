@@ -2,12 +2,12 @@ const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
-const auth = require('./bin/auth')
+const auth = require('bin/auth')
 
 const logger = require('morgan');
-const indexRouter = require('./routes/index');
-const listRouter = require('./routes/list');
-const addRouter = require('./routes/add');
+const indexRouter = require('routes/index');
+const listRouter = require('routes/list');
+const addRouter = require('routes/add');
 
 const app = express();
 
@@ -18,7 +18,7 @@ app.use(auth);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-app.use(logger('dev'));
+app.use(logger('dev', {}));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());

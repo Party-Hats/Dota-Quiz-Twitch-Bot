@@ -1,11 +1,26 @@
 {
   "name": "twitchbot",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Party-Hats/Dota-Quiz-Twitch-Bot",
+  "bugs": {
+    "url": "https://github.com/Party-Hats/Dota-Quiz-Twitch-Bot/issues"
+  },
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Party-Hats/Dota-Quiz-Twitch-Bot.git"
+  },
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node main.js"
   },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6.14"
+  },
+  "engineStrict": true,
   "dependencies": {
+    "app-module-path": "^2.2.0",
     "basic-auth": "^2.0.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
