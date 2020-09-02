@@ -245,12 +245,6 @@
   ]
  },
  {
-  "question": "Wie viele Spieler stelle Malaysia beim TI2014?",
-  "answers": [
-   "12"
-  ]
- },
- {
   "question": "Auf welchen Patch wurde das TI2015 gespielt?",
   "answers": [
    "6.84c"
@@ -2737,6 +2731,445 @@
   "question": "Lore Quiz! A hammer forged of pure mithril.",
   "answers": [
    "mithrilhammer"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The fabled dagger used by the fastest assassin ever to walk the lands.",
+  "answers": [
+   "blinkdagger"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Imbues the wielder with a ghostly presence, allowing them to evade physical damage.",
+  "answers": [
+   "ghostscepter"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A mask commonly used by mages and warlocks for various rituals.",
+  "answers": [
+   "sage'smask",
+   "sagemask",
+   "sagesmask"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A simple wand used to channel magic energies, it is favored by apprentice wizards and great warlocks alike.",
+  "answers": [
+   "magicstick"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A small amulet that clouds the senses of one's enemies when held perfectly still.",
+  "answers": [
+   "shadowamulet"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Fleet footwear, increasing movement.",
+  "answers": [
+   "bootsofspeed"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A mask that drains the energy of those caught in its gaze.",
+  "answers": [
+   "morbidmask"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A cloak made of a magical material that works to dispel any magic cast on it.",
+  "answers": [
+   "cloak"
+  ]
+ },
+ {
+  "question": "Lore Quiz! This ring is considered a good luck charm among the Gnomes.",
+  "answers": [
+   "ringofregen"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Hasten to battle on wind-touched heels.",
+  "answers": [
+   "windlace"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Not one thrall creature of the depths, Nor spirit bound in drowning's keep, Nor Maelrawn the Tentacular, Shall rest till seas, gem comes to sleep.",
+  "answers": [
+   "gemoftruesight"
+  ]
+ },
+ {
+  "question": "Lore Quiz! One of the oldest weapons forged by the Demon-Smith Abzidian, it killed its maker when he tested its edge.",
+  "answers": [
+   "demonedge"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Thick metal plates that protect the entire upper body. Avoid dropping on feet.",
+  "answers": [
+   "platemail"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A mystical orb containing the essence of life.",
+  "answers": [
+   "ultimateorb"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Capturing the majestic call of an eagle, this mystical horn brings limitless dexterity to those who hear it.",
+  "answers": [
+   "eaglesong"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A perfectly formed amethyst that nourishes body and mind when held.",
+  "answers": [
+   "pointbooster"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A ruby gemstone that has been passed down through generations of warrior kin.",
+  "answers": [
+   "vitalitybooster"
+  ]
+ },
+ {
+  "question": "Lore Quiz! This lapis gemstone is commonly added to the collection of wizards seeking to improve their presence in combat.",
+  "answers": [
+   "energybooster"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A massive axe capable of tearing whole mountains down.",
+  "answers": [
+   "reaver"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A mystical, carved stone that boosts the fervor of the holder.",
+  "answers": [
+   "hyperstone"
+  ]
+ },
+ {
+  "question": "Lore Quiz! An ancient weapon that often turns the tides of war.",
+  "answers": [
+   "sacredrelic"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Enigmatic staff made of only the most expensive crystals.",
+  "answers": [
+   "mysticstaff"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A necklace that allows you to anticipate enemy attacks.",
+  "answers": [
+   "talismanofevasion"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The Immortal was said to own a shield that protected him from death itself.",
+  "answers": [
+   "aegisoftheimmortal"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Made from the milk of a long lost Furbolg vendor, it restores the vitality of those who taste it.",
+  "answers": [
+   "cheese"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Across an epoch of endless battle, the Immortal's will to triumph never faltered.",
+  "answers": [
+   "refreshershard"
+  ]
+ },
+ {
+  "question": "Lore Quiz! One man's wine barrel bottom is another man's shield.",
+  "answers": [
+   "stoutshield"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The ring of the fallen Warlord Aquila continues to support armies in battle.",
+  "answers": [
+   "ringofaquila"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A busted old shield that seems to block more than it should.",
+  "answers": [
+   "poormansshield",
+   "poorman'sshield",
+   "poormanshield"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Winged boots that grant omnipresence.",
+  "answers": [
+   "bootsoftravel"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Once this mask is worn, it's bearer becomes an uncontrollable aggressive force.",
+  "answers": [
+   "maskofmadness"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Boots that allow the wearer to travel between the ether.",
+  "answers": [
+   "phaseboots"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The bracer is a common choice to toughen up defenses and increase longevity.",
+  "answers": [
+   "bracer"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Said to be a tear from the lunar goddess Selemene.",
+  "answers": [
+   "moonshard"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A pair of tough-skinned boots that change to meet the demands of the wearer.",
+  "answers": [
+   "powertreads"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Preserved through unknown magical means, the Hand of Midas is a weapon of greed, sacrificing animals to line the owner's pockets.",
+  "answers": [
+   "handofmidas"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A small gemstone attached to several chains.",
+  "answers": [
+   "nulltalisman"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A ring that feeds on the souls of those around it.",
+  "answers": [
+   "soulring"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The powerful headpiece of a dead necromancer.",
+  "answers": [
+   "helmofthedominator"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Deceptively hidden as an ordinary quarterstaff, it is actually very powerful, much like the Eldritch who originally possessed it.",
+  "answers": [
+   "oblivionstaff"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A circlet with faint whispers echoing about it.",
+  "answers": [
+   "wraithband"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A simple wand used to channel magic energies, it is favored by apprentice wizards and great warlocks alike.",
+  "answers": [
+   "magicwand"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A gem that grants heart to the bearer.",
+  "answers": [
+   "perseverance"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Magi equipped with these boots are valued in battle.",
+  "answers": [
+   "arcaneboots"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Forged by a god to entrap the soul of another.",
+  "answers": [
+   "spiritvessel"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A powerful shield that imbues the bearer with the strength of heroes past, it is capable of protecting entire armies in battle.",
+  "answers": [
+   "buckler"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The bearer has no fear of combat.",
+  "answers": [
+   "medallionofcourage"
+  ]
+ },
+ {
+  "question": "Lore Quiz! While they increase the longevity of the wearer, this boot is not particularly reliable.",
+  "answers": [
+   "tranquilboots"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A relic that enchants the bodies of those around it for swifter movement in times of crisis.",
+  "answers": [
+   "drumofendurance"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A glowing jewel formed out of assorted parts that somehow fit together perfectly.",
+  "answers": [
+   "mekansm"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Contains the ashes of powerful demons.",
+  "answers": [
+   "urnofshadows"
+  ]
+ },
+ {
+  "question": "Lore Quiz! One of many holy instruments constructed to honor the Omniscience.",
+  "answers": [
+   "guardiangreaves"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A powerful artifact of mysterious origin, it creates barriers against magical forces.",
+  "answers": [
+   "pipeofinsight"
+  ]
+ },
+ {
+  "question": "Lore Quiz! An eerie mask that is haunted with the malice of a fallen vampire.",
+  "answers": [
+   "vladmir'soffering",
+   "vladmirsoffering"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Creates a soothing aura that restores allies in battle.",
+  "answers": [
+   "headdress"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Ring given as a reward to the greatest mages.",
+  "answers": [
+   "ringofbasilius"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Polished with the incantation of his final breath, the gift of a dying mage to his sickly son.",
+  "answers": [
+   "aetherlens"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The stolen cape of a master illusionist.",
+  "answers": [
+   "glimmercape"
+  ]
+ },
+ {
+  "question": "Lore Quiz! tos, the Lord of Blight, has his essence stored in this deceptively simple wand.",
+  "answers": [
+   "rodofatos"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The scepter of a wizard with demigod-like powers.",
+  "answers": [
+   "aghanim'sscepter",
+   "aghanimsscepter"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Considered the holy grail of necromancy and demonology, a powerful malefic force is locked within its pages.",
+  "answers": [
+   "necronomicon"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The most guarded relic among the cult of Vyse, it is the most coveted weapon among magi.",
+  "answers": [
+   "scytheofcvyse"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A lesser wand that grows in power the longer it is used, it brings magic to the fingertips of the user.",
+  "answers": [
+   "dagon"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A dangerous weapon pilfered from an inverse dimension.",
+  "answers": [
+   "nullifier"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A talisman forged to honor the daytime sky.",
+  "answers": [
+   "solarcrest"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A mysterious scepter passed down through the ages, its disruptive winds can be used for good or evil.",
+  "answers": [
+   "eul'sscepterofdivinity",
+   "eulsscepterofdivinity"
+  ]
+ },
+ {
+  "question": "Lore Quiz! At the core of spellcraft are spectrums only the very gifted can sense.",
+  "answers": [
+   "octarinecore"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The headwear of corrupt magi.",
+  "answers": [
+   "veilofdiscord"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Allows you to manipulate others, for good or evil.",
+  "answers": [
+   "forcestaff"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A powerful artifact created for wizards.",
+  "answers": [
+   "refresherorb"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A simple but effective weapon devised to quell a great Hellbear uprising.",
+  "answers": [
+   "irontalon"
+  ]
+ },
+ {
+  "question": "Wie viele Spieler stellte Malaysia beim TI2014? ",
+  "answers": [
+   "12"
   ]
  }
 ]
