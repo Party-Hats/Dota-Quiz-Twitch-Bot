@@ -12,11 +12,11 @@ New features can freely be tested in the chat of https://twitch.tv/dota_quiz
 
 Make sure `NodeJS` and `npm` are installed on your pc
 
-When starting the bot in a dev environment (where is constantly restarted and does not have to run as a daemon), execute the following commands:
-`npm install` (Installs all dependencies)
+When starting the bot in a dev environment (where is constantly restarted and does not have to run as a daemon), execute the following commands:<br/>
+`npm install` (Installs all dependencies)<br/>
 `npm start:dev`
 
-This will start the bot in a blocking command which can be terminated to stop the bot.
+This will start the bot in a blocking command which can be terminated to stop the bot.<br/>
 All logs are written to the log files and nothing is printed to the console.
 
 Create a file `token` in the main directory that holds the oauth token for the user that posts in twitch chat.
@@ -25,17 +25,17 @@ Create a file `token` in the main directory that holds the oauth token for the u
 
 Make sure `NodeJS` and `npm` are installed on your pc
 
-To have the bot run as a service in production execute the following commands:
-`npm install` (Installs all dependencies)
-`npm setup-system-startup`
-This will print a command that should be executed to have the service be in the autostart of the machine
-`npm start`
+To have the bot run as a service in production execute the following commands:<br/>
+`npm install` (Installs all dependencies)<br/>
+`npm setup-system-startup`<br/>
+This will print a command that should be executed to have the service be in the autostart of the machine<br/>
+`npm start`<br/>
 This will start the service in the background where all logs are printed to te corresponding log files.
 
-These additional commands cn be used to manage the service:
-`npm stop`
-`npm restart`
-`npm uninstall`
+These additional commands can be used to manage the service:<br/>
+`npm stop`<br/>
+`npm restart`<br/>
+`npm uninstall`<br/>
 For additional monitoring check https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/
 
 ## User Guide
