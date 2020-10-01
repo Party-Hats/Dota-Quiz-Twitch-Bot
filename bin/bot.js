@@ -5,6 +5,8 @@ const log = require('bin/log');
 const timeConverter = require('bin/timeConverter');
 const questions = require('bin/questions');
 
+const MAX_CHAT_MESSAGE_LENGTH = 499;
+
 const tokenFile = 'token';
 const config = JSON.parse(fs.readFileSync('config/config.json', "utf-8"));
 // Might later be extended to give the ability to choose between different locales
@@ -240,17 +242,26 @@ function _sendMultilineScores(channel, data) {
     client.say(channel,
         parseLocaleString(lang.commandResetNobodyHasPoints, {}));
   }
+  let message = "";
   for (let i = 0; i < data.length; i++) {
     let user = data[i].user;
     let score = data[i].score;
     let rank = i + 1;
     log.debug("User \"" + user + "\" had " + score + " points with rank " + rank);
-    client.say(channel, parseLocaleString(lang.commandScore, {
+    let nextMessage = parseLocaleString(lang.commandScoreShort, {
       "user": user,
       "scoreNumber": score,
       "userRank": rank
-    }));
+    });
+    let messageWithNextMessage = message + " " + nextMessage;
+    if (messageWithNextMessage.length < MAX_CHAT_MESSAGE_LENGTH) {
+      message = messageWithNextMessage;
+    } else {
+      client.say(channel, message);
+      message = nextMessage;
+    }
   }
+  client.say(channel, message);
 }
 
 function onConnectedHandler(addr, port) {
