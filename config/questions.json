@@ -245,12 +245,6 @@
   ]
  },
  {
-  "question": "Wie viele Spieler stelle Malaysia beim TI2014?",
-  "answers": [
-   "12"
-  ]
- },
- {
   "question": "Auf welchen Patch wurde das TI2015 gespielt?",
   "answers": [
    "6.84c"
@@ -514,12 +508,6 @@
  },
  {
   "question": "In welchen Patch wurde die Crown als neues Item eingeführt?",
-  "answers": [
-   "7.20"
-  ]
- },
- {
-  "question": "In welchen Patch wurde der Ring of Rarrasque als neues Item eingeführt?",
   "answers": [
    "7.20"
   ]
@@ -813,12 +801,6 @@
   "question": "In welchen Patch wurde Oracle zu Dota 2 hinzugefügt?",
   "answers": [
    "6.78"
-  ]
- },
- {
-  "question": "In welchen Patch erschien Arc Warden in Dota 2?",
-  "answers": [
-   "6.75"
   ]
  },
  {
@@ -2275,6 +2257,1596 @@
   "question": "Richtig oder falsch? Der Effekt von mehreren Healing Wards stackt.",
   "answers": [
    "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Der Spirit Bear kann denied werden. ",
+  "answers": [
+   "richtig"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Split Shot funktioniert auch beim attackieren von Allies.",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Meepo kann zu Illusions poffen.",
+  "answers": [
+   "richtig"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Man kann während Leap Items benutzen.",
+  "answers": [
+   "richtig"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Monkey King kann sich selbst stunnen.",
+  "answers": [
+   "richtig"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Mit Morph switcht man zwischen Strengh und Agility hin und her. ",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Man kann von Song of the Siren betroffene Gebäude angreifen. ",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Man kann während man TP´d, Vendetta benutzen. ",
+  "answers": [
+   "richtig"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Swashbuckle trifft auch ethereal units.",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Phantom Assassin besitzt den Spell Ghost Strike.",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Plasma Field kann den Gegner zwei Mal treffen.",
+  "answers": [
+   "richtig"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Eye of the Storm trifft auch Roshan.",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Riki´s Nachname is Tahlin.",
+  "answers": [
+   "richtig"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Wards können Shadow Fiend eine Seele geben.",
+  "answers": [
+   "richtig"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Neutral Creeps können den Effekt von Shadow Dance nicht disablen.",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Moon Glaive Bounces können evaded werden.",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Sniper besitzt den Spell \"Shrapnol\".",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Dispersion Damage disabled nicht den Blink Dagger.",
+  "answers": [
+   "richtig"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Der Meld debuff stackt. ",
+  "answers": [
+   "richtig"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Psi Blades können auch invisible units treffen.",
+  "answers": [
+   "richtig"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Spells die man während der Metamorphosis nutzt, haben eine kürzere backswing time.",
+  "answers": [
+   "richtig"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Troll Warlord besitzt den Spell Battle Dance.",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Enrage macht den Benutzer größer. ",
+  "answers": [
+   "richtig"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Der Schaden von Corrosive Skin kann reflected werden. ",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? The Swarm funktioniert auch in der Chronosphere.",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Shukuchi kann den gleichen Helden zwei Mal treffen. ",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Cold Feet kann auf das gleiche Target 2x gleichzeitig gecastet werden. ",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Hand of God healt Illussions.",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Enigma besitz den Spell \"'Satanic Conversion\".",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Quas gibt euch Attack Damage. ",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Scepter Macropyre hört sich anders an. ",
+  "answers": [
+   "richtig"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Chain Frost kann auch Zombies treffen.",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Finger of Death Schaden kann gedodged werden.",
+  "answers": [
+   "richtig"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Bloodlust macht einen größer.",
+  "answers": [
+   "richtig"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Oracle besitzt den Spell Fortune's End.",
+  "answers": [
+   "richtig"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Decrepify funktioniert auf den Tombstone.",
+  "answers": [
+   "richtig"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Serpent Wards können Roshan trappen.",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Man kann während Ball Lightning keine Items benutzen.",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Rearm funktioniert auch auf den Meteor Hammer.",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Richtig oder falsch? Fatal Bonds funktioniert auch auf Roshan.",
+  "answers": [
+   "falsch"
+  ]
+ },
+ {
+  "question": "Lore Quiz! An old bottle that survived the ages, the contents placed inside become enchanted.",
+  "answers": [
+   "bottle"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A magical salve that can quickly mend even the deepest of wounds.",
+  "answers": [
+   "healingsalve"
+  ]
+ },
+ {
+  "question": "Lore Quiz! That which raises beast to man and man to god.",
+  "answers": [
+   "tomeofknowledge"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Clear water that enhances the ability to meditate",
+  "answers": [
+   "clarity"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A form of half-sentient plant, often cultivated by apprentice wizards.",
+  "answers": [
+   "observerward"
+  ]
+ },
+ {
+  "question": "Lore Quiz! What a hero truly needs.",
+  "answers": [
+   "townportalscroll"
+  ]
+ },
+ {
+  "question": "Lore Quiz! One may hide visage, but never volume.",
+  "answers": [
+   "dustofappearance"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A form of plant originally grown in the garden of a fearful king.",
+  "answers": [
+   "sentryward"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The bittersweet flavors of Jidi Isle are irresistible to amphibians.",
+  "answers": [
+   "enchantedmango"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The charlatan wizard Myrddin's only true contribution to the arcane arts.",
+  "answers": [
+   "smokeofdeceit"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The ethereal flames from the ever-burning ruins of Kindertree ignite across realities.",
+  "answers": [
+   "faeriefire"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Forage to survive on the battlefield.",
+  "answers": [
+   "tango"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A tensile fabric often used for its light weight and ease of movement.",
+  "answers": [
+   "bandofelvenskin"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Studded leather gloves that add brute strength.",
+  "answers": [
+   "gauntletsofstrengh"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Light boots made from spider skin that tingles your senses.",
+  "answers": [
+   "slippersofagility"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A valued accessory for improving vitality.",
+  "answers": [
+   "beltofstrength"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A seemingly ordinary branch, its ironlike qualities are bestowed upon the bearer.",
+  "answers": [
+   "ironbranch"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A staff of magical powers passed down from the eldest mages.",
+  "answers": [
+   "staffofwizardry"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A long blade imbued with time magic.",
+  "answers": [
+   "bladeofalacrity"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A beautiful sapphire mantle worn by generations of queens.",
+  "answers": [
+   "mantleofintelligence"
+  ]
+ },
+ {
+  "question": "Lore Quiz! An elegant circlet designed for human princesses.",
+  "answers": [
+   "circlet"
+  ]
+ },
+ {
+  "question": "Lore Quiz! You grow stronger just by holding it.",
+  "answers": [
+   "ogreaxe"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The damage of these small, concealable blades should not be underestimated.",
+  "answers": [
+   "bladesofattack"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A pair of magical gloves that seems to render weapons weightless.",
+  "answers": [
+   "glovesofhaste"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Envenoms your veapon with the venom of a venomous viper.",
+  "answers": [
+   "orbofvenom"
+  ]
+ },
+ {
+  "question": "Lore Quiz! An unnerving stone unearthed beneath the Fields of Endless Carnage.",
+  "answers": [
+   "blightstone"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The helmet of a legendary warrior who fell in battle.",
+  "answers": [
+   "helmofironwill"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A basic staff that allows you to strike quickly.",
+  "answers": [
+   "quarterstaff"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The classic weapon of choice for knights, this blade is sturdy and reliable for slaying enemies.",
+  "answers": [
+   "broadsword"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Elemental protection from magical assaults.",
+  "answers": [
+   "infusedraindrops"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The axe of a fallen gnome, it allows you to effectively maneuver the forest.",
+  "answers": [
+   "quellingblade"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A medium weave of metal chains.",
+  "answers": [
+   "chainmail"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A rather typical spear that can sometimes pierce through an enemy's armor when used to attack.",
+  "answers": [
+   "javelin"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A glimmering ring that defends its bearer.",
+  "answers": [
+   "ringofprotection"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A sword that can cut through armor, it's a commonly chosen first weapon for budding swordsmen.",
+  "answers": [
+   "claymore"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A hammer forged of pure mithril.",
+  "answers": [
+   "mithrilhammer"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The fabled dagger used by the fastest assassin ever to walk the lands.",
+  "answers": [
+   "blinkdagger"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Imbues the wielder with a ghostly presence, allowing them to evade physical damage.",
+  "answers": [
+   "ghostscepter"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A mask commonly used by mages and warlocks for various rituals.",
+  "answers": [
+   "sage'smask",
+   "sagemask",
+   "sagesmask"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A simple wand used to channel magic energies, it is favored by apprentice wizards and great warlocks alike.",
+  "answers": [
+   "magicstick"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A small amulet that clouds the senses of one's enemies when held perfectly still.",
+  "answers": [
+   "shadowamulet"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Fleet footwear, increasing movement.",
+  "answers": [
+   "bootsofspeed"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A mask that drains the energy of those caught in its gaze.",
+  "answers": [
+   "morbidmask"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A cloak made of a magical material that works to dispel any magic cast on it.",
+  "answers": [
+   "cloak"
+  ]
+ },
+ {
+  "question": "Lore Quiz! This ring is considered a good luck charm among the Gnomes.",
+  "answers": [
+   "ringofregen"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Hasten to battle on wind-touched heels.",
+  "answers": [
+   "windlace"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Not one thrall creature of the depths, Nor spirit bound in drowning's keep, Nor Maelrawn the Tentacular, Shall rest till seas, gem comes to sleep.",
+  "answers": [
+   "gemoftruesight"
+  ]
+ },
+ {
+  "question": "Lore Quiz! One of the oldest weapons forged by the Demon-Smith Abzidian, it killed its maker when he tested its edge.",
+  "answers": [
+   "demonedge"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Thick metal plates that protect the entire upper body. Avoid dropping on feet.",
+  "answers": [
+   "platemail"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A mystical orb containing the essence of life.",
+  "answers": [
+   "ultimateorb"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Capturing the majestic call of an eagle, this mystical horn brings limitless dexterity to those who hear it.",
+  "answers": [
+   "eaglesong"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A perfectly formed amethyst that nourishes body and mind when held.",
+  "answers": [
+   "pointbooster"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A ruby gemstone that has been passed down through generations of warrior kin.",
+  "answers": [
+   "vitalitybooster"
+  ]
+ },
+ {
+  "question": "Lore Quiz! This lapis gemstone is commonly added to the collection of wizards seeking to improve their presence in combat.",
+  "answers": [
+   "energybooster"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A massive axe capable of tearing whole mountains down.",
+  "answers": [
+   "reaver"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A mystical, carved stone that boosts the fervor of the holder.",
+  "answers": [
+   "hyperstone"
+  ]
+ },
+ {
+  "question": "Lore Quiz! An ancient weapon that often turns the tides of war.",
+  "answers": [
+   "sacredrelic"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Enigmatic staff made of only the most expensive crystals.",
+  "answers": [
+   "mysticstaff"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A necklace that allows you to anticipate enemy attacks.",
+  "answers": [
+   "talismanofevasion"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The Immortal was said to own a shield that protected him from death itself.",
+  "answers": [
+   "aegisoftheimmortal"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Made from the milk of a long lost Furbolg vendor, it restores the vitality of those who taste it.",
+  "answers": [
+   "cheese"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Across an epoch of endless battle, the Immortal's will to triumph never faltered.",
+  "answers": [
+   "refreshershard"
+  ]
+ },
+ {
+  "question": "Lore Quiz! One man's wine barrel bottom is another man's shield.",
+  "answers": [
+   "stoutshield"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The ring of the fallen Warlord Aquila continues to support armies in battle.",
+  "answers": [
+   "ringofaquila"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A busted old shield that seems to block more than it should.",
+  "answers": [
+   "poormansshield",
+   "poorman'sshield",
+   "poormanshield"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Winged boots that grant omnipresence.",
+  "answers": [
+   "bootsoftravel"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Once this mask is worn, it's bearer becomes an uncontrollable aggressive force.",
+  "answers": [
+   "maskofmadness"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Boots that allow the wearer to travel between the ether.",
+  "answers": [
+   "phaseboots"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The bracer is a common choice to toughen up defenses and increase longevity.",
+  "answers": [
+   "bracer"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Said to be a tear from the lunar goddess Selemene.",
+  "answers": [
+   "moonshard"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A pair of tough-skinned boots that change to meet the demands of the wearer.",
+  "answers": [
+   "powertreads"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Preserved through unknown magical means, the Hand of Midas is a weapon of greed, sacrificing animals to line the owner's pockets.",
+  "answers": [
+   "handofmidas"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A small gemstone attached to several chains.",
+  "answers": [
+   "nulltalisman"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A ring that feeds on the souls of those around it.",
+  "answers": [
+   "soulring"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The powerful headpiece of a dead necromancer.",
+  "answers": [
+   "helmofthedominator"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Deceptively hidden as an ordinary quarterstaff, it is actually very powerful, much like the Eldritch who originally possessed it.",
+  "answers": [
+   "oblivionstaff"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A circlet with faint whispers echoing about it.",
+  "answers": [
+   "wraithband"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A simple wand used to channel magic energies, it is favored by apprentice wizards and great warlocks alike.",
+  "answers": [
+   "magicwand"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A gem that grants heart to the bearer.",
+  "answers": [
+   "perseverance"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Magi equipped with these boots are valued in battle.",
+  "answers": [
+   "arcaneboots"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Forged by a god to entrap the soul of another.",
+  "answers": [
+   "spiritvessel"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A powerful shield that imbues the bearer with the strength of heroes past, it is capable of protecting entire armies in battle.",
+  "answers": [
+   "buckler"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The bearer has no fear of combat.",
+  "answers": [
+   "medallionofcourage"
+  ]
+ },
+ {
+  "question": "Lore Quiz! While they increase the longevity of the wearer, this boot is not particularly reliable.",
+  "answers": [
+   "tranquilboots"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A relic that enchants the bodies of those around it for swifter movement in times of crisis.",
+  "answers": [
+   "drumofendurance"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A glowing jewel formed out of assorted parts that somehow fit together perfectly.",
+  "answers": [
+   "mekansm"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Contains the ashes of powerful demons.",
+  "answers": [
+   "urnofshadows"
+  ]
+ },
+ {
+  "question": "Lore Quiz! One of many holy instruments constructed to honor the Omniscience.",
+  "answers": [
+   "guardiangreaves"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A powerful artifact of mysterious origin, it creates barriers against magical forces.",
+  "answers": [
+   "pipeofinsight"
+  ]
+ },
+ {
+  "question": "Lore Quiz! An eerie mask that is haunted with the malice of a fallen vampire.",
+  "answers": [
+   "vladmir'soffering",
+   "vladmirsoffering"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Creates a soothing aura that restores allies in battle.",
+  "answers": [
+   "headdress"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Ring given as a reward to the greatest mages.",
+  "answers": [
+   "ringofbasilius"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Polished with the incantation of his final breath, the gift of a dying mage to his sickly son.",
+  "answers": [
+   "aetherlens"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The stolen cape of a master illusionist.",
+  "answers": [
+   "glimmercape"
+  ]
+ },
+ {
+  "question": "Lore Quiz! tos, the Lord of Blight, has his essence stored in this deceptively simple wand.",
+  "answers": [
+   "rodofatos"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The scepter of a wizard with demigod-like powers.",
+  "answers": [
+   "aghanim'sscepter",
+   "aghanimsscepter"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Considered the holy grail of necromancy and demonology, a powerful malefic force is locked within its pages.",
+  "answers": [
+   "necronomicon"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The most guarded relic among the cult of Vyse, it is the most coveted weapon among magi.",
+  "answers": [
+   "scytheofcvyse"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A lesser wand that grows in power the longer it is used, it brings magic to the fingertips of the user.",
+  "answers": [
+   "dagon"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A dangerous weapon pilfered from an inverse dimension.",
+  "answers": [
+   "nullifier"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A talisman forged to honor the daytime sky.",
+  "answers": [
+   "solarcrest"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A mysterious scepter passed down through the ages, its disruptive winds can be used for good or evil.",
+  "answers": [
+   "eul'sscepterofdivinity",
+   "eulsscepterofdivinity"
+  ]
+ },
+ {
+  "question": "Lore Quiz! At the core of spellcraft are spectrums only the very gifted can sense.",
+  "answers": [
+   "octarinecore"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The headwear of corrupt magi.",
+  "answers": [
+   "veilofdiscord"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Allows you to manipulate others, for good or evil.",
+  "answers": [
+   "forcestaff"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A powerful artifact created for wizards.",
+  "answers": [
+   "refresherorb"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A simple but effective weapon devised to quell a great Hellbear uprising.",
+  "answers": [
+   "irontalon"
+  ]
+ },
+ {
+  "question": "Wie viele Spieler stellte Malaysia beim TI2014? ",
+  "answers": [
+   "12"
+  ]
+ },
+ {
+  "question": " In welchen Patch erschien Arc Warden in Dota 2? ",
+  "answers": [
+   "6.86"
+  ]
+ },
+ {
+  "question": "In welchen Patch wurde der Ring of Tarrasque als neues Item eingeführt? ",
+  "answers": [
+   "7.20"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A powerful artifact long ago smuggled out of the Ivory Incubarium. Or so many believe.",
+  "answers": [
+   "aeondisk"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A cuirass originally built to protect against the dreaded Year Beast.",
+  "answers": [
+   "crimsonguard"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The jewel at its center still reflects a pale image of its creator.",
+  "answers": [
+   "lotusorb"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Forged in the depths of the nether reaches, this hellish mail provides an army with increased armor and attack speed.",
+  "answers": [
+   "assaultcuirass"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Preserved heart of an extinct monster, it bolsters the bearer's fortitude.",
+  "answers": [
+   "heartoftarrasque"
+  ]
+ },
+ {
+  "question": "Lore Quiz! An axe made of reflective materials that causes confusion amongst enemy ranks.",
+  "answers": [
+   "mantastyle"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A powerful staff imbued with the strength of giants.",
+  "answers": [
+   "blackkingbar"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A furred, magic resistant headpiece that is feared by wizards.",
+  "answers": [
+   "hoodofdefiance"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Said to have belonged to a goddess, today it retains much of its former power.",
+  "answers": [
+   "shivasguard",
+   "shiva'sguard"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A razor-sharp coat of mail, it is the choice of selfless martyrs in combat.",
+  "answers": [
+   "blademail"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A legendary pike once held as royal sigil of the ancient wyvern riders.",
+  "answers": [
+   "hurricanepike"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Regain lost courage.",
+  "answers": [
+   "soulbooster"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The Bloodstone's bright ruby color is unmistakable on the battlefield, as the owner seems to have infinite vitality and spirit.",
+  "answers": [
+   "bloodstone"
+  ]
+ },
+ {
+  "question": "Lore Quiz! This magical sphere once protected one of the most famous heroes in history.",
+  "answers": [
+   "linkenssphere",
+   "linken'ssphere"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A powerful shield that defends its wielder from even the most vicious of attacks.",
+  "answers": [
+   "vanguard"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The lost blade of the Commander of the Abyss, this edge cuts into an enemy's soul.",
+  "answers": [
+   "abyssalblade"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A blade forged from rare crystals, it seeks weak points in enemy armor.",
+  "answers": [
+   "crystalys"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A powerful staff used by a master warrior.",
+  "answers": [
+   "monkeykingbar"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Weapon of choice among brutes, the bearer sacrifices his life energy to gain immense strength and power.",
+  "answers": [
+   "armletofmordiggian"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A weapon of incredible power that is difficult for even the strongest of warriors to control.",
+  "answers": [
+   "daedalus"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A divine weapon that causes damage and a bright burning effect that lays waste to nearby enemies.",
+  "answers": [
+   "radiance"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The bearer of this mighty axe gains the ability to cut down swaths of enemies at once.",
+  "answers": [
+   "battlefury"
+  ]
+ },
+ {
+  "question": "Lore Quiz! So powerful, it cannot have a single owner.",
+  "answers": [
+   "divinerapier"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The blade of a fallen king, it allows you to move unseen and strike from the shadows.",
+  "answers": [
+   "shadowblade"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A reviled blade that bites deeper with each wriggle of its victim's final throes.",
+  "answers": [
+   "bloodthorn"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A flickering blade of a ghastly nature, it is capable of dealing damage in both magical and physical planes.",
+  "answers": [
+   "etherealblade"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Once used to slay an unjust king, only to have the kingdom erupt into civil war in the aftermath.",
+  "answers": [
+   "silveredge"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Only the mightiest and most experienced of warriors can wield the Butterfly, but it provides incredible dexterity in combat.",
+  "answers": [
+   "butterfly"
+  ]
+ },
+ {
+  "question": "Lore Quiz! An enchanted hammer forged of metals discovered in the ruins of a village destroyed by a great star storm.",
+  "answers": [
+   "meteorhammer"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A feared weapon in the right hands, this maul's ability to shatter the defenses of its opponents should not be underestimated.",
+  "answers": [
+   "skullbasher"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A wicked weapon, used in torturing political criminals.",
+  "answers": [
+   "desolator"
+  ]
+ },
+ {
+  "question": "Lore Quiz! This halberd moves with the speed of a smaller weapon, allowing the bearer to win duels that a heavy edge would not.",
+  "answers": [
+   "heaven'shalberd",
+   "heavenshalberd"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Sange is an unusually accurate weapon, seeking weak points automatically.",
+  "answers": [
+   "sange"
+  ]
+ },
+ {
+  "question": "Lore Quiz! An enchanted blade that allows the user to cut straight into the enemy's soul.",
+  "answers": [
+   "diffusalblade"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The staff of a renowned sorceress, lost for countless millennia.",
+  "answers": [
+   "kaya"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Sange and Yasha, when attuned by the moonlight and used together, become a very powerful combination.",
+  "answers": [
+   "sangeandyasha",
+   "sange&yasha"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The forward charge of the wyvern host grants no quarter.",
+  "answers": [
+   "dragonlance"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Immense power at the cost of your soul.",
+  "answers": [
+   "satanic"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A deceptively swift blade imbued with resonant magic.",
+  "answers": [
+   "echosabre"
+  ]
+ },
+ {
+  "question": "Lore Quiz! A hammer forged for the gods themselves, Maelstrom allows its user to harness the power of lightning.",
+  "answers": [
+   "maelstrom"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Yasha is regarded as the swiftest weapon ever created.",
+  "answers": [
+   "yasha"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Extremely rare artifact, guarded by the azure dragons.",
+  "answers": [
+   "eyeofskadi"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Thor’s magical hammer, made for him by the dwarves Brok and Eitri.",
+  "answers": [
+   "mjollnir"
+  ]
+ },
+ {
+  "question": "Responses Quiz! The coils of life and death now bind us all.",
+  "answers": [
+   "abaddon"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Hey, you're making me spill!",
+  "answers": [
+   "alchemist"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Now is the winter of your disembowelment",
+  "answers": [
+   "ancientapparition"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Such sorcery shall not prevail.",
+  "answers": [
+   "antimage"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Matter has been split from its intended form. These must be made to unite.",
+  "answers": [
+   "arcwarden"
+  ]
+ },
+ {
+  "question": "Responses Quiz! You get nothing. Good day, sir!",
+  "answers": [
+   "axe"
+  ]
+ },
+ {
+  "question": "Lore Quiz! This robe corrupts the soul of the user, but provides wisdom in return.",
+  "answers": [
+   "robeofthemagi"
+  ]
+ },
+ {
+  "question": "Responses Quiz! I come with evil dreams.",
+  "answers": [
+   "bane"
+  ]
+ },
+ {
+  "question": "Responses Quiz! If you don't ride into battle, you don't ride at all.",
+  "answers": [
+   "batrider"
+  ]
+ },
+ {
+  "question": "Responses Quiz! I'm a natural disaster.",
+  "answers": [
+   "beastmaster"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Over the field of battle, the smell of blood rises like a promise.",
+  "answers": [
+   "bloodseeker"
+  ]
+ },
+ {
+  "question": "Responses Quiz! There was a price on your head.",
+  "answers": [
+   "bountyhunter"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Here's beer in your eye.",
+  "answers": [
+   "brewmaster"
+  ]
+ },
+ {
+  "question": "Responses Quiz! More where that came from sunshine.",
+  "answers": [
+   "bristleback"
+  ]
+ },
+ {
+  "question": "Responses Quiz! I pull the web over your eyes.",
+  "answers": [
+   "broodmother"
+  ]
+ },
+ {
+  "question": "Responses Quiz! With steel and strength.",
+  "answers": [
+   "centaurwarrunner"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Like the heads of my enemies, this one is in the bag.",
+  "answers": [
+   "chaosknight"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Test your faith.",
+  "answers": [
+   "chen"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Where goes my eye, goes my arrow.",
+  "answers": [
+   "clinkz"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Not the strongest enemy I've grappled with.",
+  "answers": [
+   "clockwerk"
+  ]
+ },
+ {
+  "question": "Responses Quiz! It's all fun and games until someone's frozen solid.",
+  "answers": [
+   "crystalmaiden"
+  ]
+ },
+ {
+  "question": "Responses Quiz! I know my enemy as I know myself.",
+  "answers": [
+   "darkseer"
+  ]
+ },
+ {
+  "question": "Responses Quiz! We did it Jex!",
+  "answers": [
+   "darkwillow"
+  ]
+ },
+ {
+  "question": "Responses Quiz! I cast a long shadow.",
+  "answers": [
+   "dazzle"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Go and feed, my beautiful sisters!",
+  "answers": [
+   "deathprophet"
+  ]
+ },
+ {
+  "question": "Responses Quiz! The forecast calls for blood.",
+  "answers": [
+   "disruptor"
+  ]
+ },
+ {
+  "question": "Responses Quiz! The fire starts now.",
+  "answers": [
+   "doom"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Face the knight, face the dragon.",
+  "answers": [
+   "dragonknight"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Faster than an arrow's flight.",
+  "answers": [
+   "drowranger"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Through conflict, one's nature is revealed.",
+  "answers": [
+   "earthspirit"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Shake it!",
+  "answers": [
+   "earthshaker"
+  ]
+ },
+ {
+  "question": "Responses Quiz! I broke the world, did you think I could not break you?",
+  "answers": [
+   "eldertitan"
+  ]
+ },
+ {
+  "question": "Responses Quiz! From knowledge comes skill.",
+  "answers": [
+   "emberspirit"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Light of foot, light of heart!",
+  "answers": [
+   "enchantress"
+  ]
+ },
+ {
+  "question": "Responses Quiz! If light cannot escape me, what hope have you?",
+  "answers": [
+   "enigma"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Your time will come.",
+  "answers": [
+   "facelessvoid"
+  ]
+ },
+ {
+  "question": "Responses Quiz! The strokes of my brush mark your fate.",
+  "answers": [
+   "grimstroke"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Meeeeoooooooowwwwnnn!",
+  "answers": [
+   "gyrocopter"
+  ]
+ },
+ {
+  "question": "Responses Quiz! From the Nothl Realm, I return.",
+  "answers": [
+   "huskar"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Glorious invocation!",
+  "answers": [
+   "invoker"
+  ]
+ },
+ {
+  "question": "Responses Quiz! First blood, ha! And plenty for both of us!",
+  "answers": [
+   "jakiro"
+  ]
+ },
+ {
+  "question": "Responses Quiz! With practice comes strength.",
+  "answers": [
+   "juggernaut"
+  ]
+ },
+ {
+  "question": "Responses Quiz! A quest? A quest! A-questing I shall go!",
+  "answers": [
+   "keeperofthelight"
+  ]
+ },
+ {
+  "question": "Responses Quiz! A quest? Grggglglglglglglglggllllllll",
+  "answers": [
+   "kunkka"
+  ]
+ },
+ {
+  "question": "Responses Quiz! A quest? If they want war, then we shall give it to them!",
+  "answers": [
+   "legioncommander"
+  ]
+ },
+ {
+  "question": "Responses Quiz! I come to tip the balance!",
+  "answers": [
+   "leshrac"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Lich gonna have your mama.",
+  "answers": [
+   "hansi"
+  ]
+ },
+ {
+  "question": "Responses Quiz! From the frozen pool, I rise.",
+  "answers": [
+   "lich"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Sweet, sweet violence.",
+  "answers": [
+   "lifestealer"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Cold-hearted bitch.",
+  "answers": [
+   "lina"
+  ]
+ },
+ {
+  "question": "Responses Quiz! I've been to hell and back, and back to hell…and back.",
+  "answers": [
+   "lion"
+  ]
+ },
+ {
+  "question": "Responses Quiz! No foe shall stand against my mission!",
+  "answers": [
+   "lonedruid"
+  ]
+ },
+ {
+  "question": "Responses Quiz! For Dark Moon!",
+  "answers": [
+   "luna"
+  ]
+ },
+ {
+  "question": "Responses Quiz! A wolf in man's clothing.",
+  "answers": [
+   "lycan"
+  ]
+ },
+ {
+  "question": "Responses Quiz! My horn is sharp, my pike is sharper still.",
+  "answers": [
+   "magnus"
+  ]
+ },
+ {
+  "question": "Responses Quiz! A quest? You can call this one... I've never lost and I'll not start now!",
+  "answers": [
+   "mars"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Their deaths will be swift and cold as stone.",
+  "answers": [
+   "medusa"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Probably gonna dig a grave or two before this is done.",
+  "answers": [
+   "meepo"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Your Priestess has arrived!",
+  "answers": [
+   "mirana"
+  ]
+ },
+ {
+  "question": "Responses Quiz! A quest? Taking the high ground.",
+  "answers": [
+   "monkeyking"
+  ]
+ },
+ {
+  "question": "Responses Quiz! My waters rise.",
+  "answers": [
+   "morphling"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Time to sink or swim.",
+  "answers": [
+   "nagasiren"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Nature's guardian returns.",
+  "answers": [
+   "nature'sprophet",
+   "naturesprophet"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Comes the Dark Rot.",
+  "answers": [
+   "necrophos"
+  ]
+ },
+ {
+  "question": "Responses Quiz! A quest? I'm the beast of bedtime tales.",
+  "answers": [
+   "nightstalker"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Nyx, Nyx, Nyx, Nyx.",
+  "answers": [
+   "nyxassassin"
+  ]
+ },
+ {
+  "question": "Responses Quiz! They picked me! No one ever picks me.",
+  "answers": [
+   "ogremagi"
+  ]
+ },
+ {
+  "question": "Responses Quiz! A quest? The All-knowing One guides me",
+  "answers": [
+   "omniknight"
+  ]
+ },
+ {
+  "question": "Responses Quiz! A quest? Let if be all that we see or seem.",
+  "answers": [
+   "oracle"
+  ]
+ },
+ {
+  "question": "Responses Quiz! A quest? From the outer dark I come.",
+  "answers": [
+   "outworlddevourer"
   ]
  }
 ]
