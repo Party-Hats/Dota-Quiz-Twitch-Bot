@@ -8,15 +8,35 @@ New features can freely be tested in the chat of https://twitch.tv/dota_quiz
 
 ## Install and run the bot
 
+### In development
+
 Make sure `NodeJS` and `npm` are installed on your pc
 
-To install all dependencies run this in the main folder of the project:
-`npm install`
+When starting the bot in a dev environment (where is constantly restarted and does not have to run as a daemon), execute the following commands:
+`npm install` (Installs all dependencies)
+`npm start:dev`
+
+This will start the bot in a blocking command which can be terminated to stop the bot.
+All logs are written to the log files and nothing is printed to the console.
 
 Create a file `token` in the main directory that holds the oauth token for the user that posts in twitch chat.
 
-Execute this command to run the bot:
+### In production
+
+Make sure `NodeJS` and `npm` are installed on your pc
+
+To have the bot run as a service in production execute the following commands:
+`npm install` (Installs all dependencies)
+`npm setup-system-startup`
+This will print a command that should be executed to have the service be in the autostart of the machine
 `npm start`
+This will start the service in the background where all logs are printed to te corresponding log files.
+
+These additional commands cn be used to manage the service:
+`npm stop`
+`npm restart`
+`npm uninstall`
+For additional monitoring check https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/
 
 ## User Guide
 
