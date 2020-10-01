@@ -1,12 +1,18 @@
 require('app-module-path').addPath('.');
+const log = require('bin/log');
 
-/*
- * Run WebServer
- */
-require('bin/www.js');
+try {
+  /*
+   * Run WebServer
+   */
+  require('bin/www.js');
 
-/*
- * Run bot
- */
-let bot = require('bin/bot.js');
-bot.setup();
+  /*
+   * Run bot
+   */
+  let bot = require('bin/bot.js');
+  bot.setup();
+} catch (e) {
+  log.error(e);
+  process.exit(1);
+}

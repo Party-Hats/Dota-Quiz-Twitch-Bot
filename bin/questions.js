@@ -158,9 +158,13 @@ function getAllQuestions() {
 }
 
 process.on("SIGINT", function () {
-  fs.writeFileSync(questionDrawerPersistencePath,
-      JSON.stringify(questionDrawer.getDrawnNums()));
-  log.info("Successfully persisted question drawer");
+  if (questionDrawer !== undefined) {
+    fs.writeFileSync(questionDrawerPersistencePath,
+        JSON.stringify(questionDrawer.getDrawnNums()));
+    log.info("Successfully persisted question drawer");
+  } else {
+    log.warn("No question drawer was defined, so none is backed up for next startup");
+  }
   process.exit(0);
 });
 
