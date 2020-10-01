@@ -5,6 +5,8 @@ const log = require('bin/log');
 const timeConverter = require('bin/timeConverter');
 const questions = require('bin/questions');
 
+// Found by trial and error to be the maximum length for a chat message.
+// All further characters are just removed
 const MAX_CHAT_MESSAGE_LENGTH = 499;
 
 const tokenFile = 'token';
