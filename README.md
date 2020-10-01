@@ -62,6 +62,7 @@ Note, that all commands are case-insensitive, meaning, that for example `#score`
 * When running, the bot has to be started to post questions using the command `#startQuiz` :pushpin:
 * It can always be disabled again using `#stopQuiz` :pushpin:, at which point it will only react to commands but will not post anything on its own
 * Note, that start and stop are only available to a channel admin who can be configured in the config under `channelAdmin`
+* When enabled in the configuration, the bot will automatically disable itself when the stream of the configured channel is offline
 * The bot will post questions into the chat every 60seconds :pushpin:
 * When the question is not answered correctly within 20seconds :pushpin:, it "expires" with a notification in chat
 * Chat users can try to answer the question by prefixing the chat answer with `?` :pushpin:. For example: `?110mana`
@@ -89,6 +90,9 @@ The name of the twitch channel, the bot should post its messages and react to co
 
 #### channelAdmin
 The name of the twitch user, that is able to execute the Admin Commands
+
+#### disableBotWhenChannelIsOffline
+When enabled, the quiz is automatically stopped when stream is offline
 
 #### postQuestionIntervalInSeconds
 The interval in which questions should be posted in seconds
@@ -190,6 +194,14 @@ Variables:
 
 #### commandScore
 Send the total score of the user, that send the command
+
+Variables:
+* `user`: The user, that sent the message
+* `scoreNumber`: The score of the user
+* `userRank`: The rank of the current compared to all others
+
+#### commandScoreShort
+Sent when the scores of multiple users are printed in a single chat message
 
 Variables:
 * `user`: The user, that sent the message
