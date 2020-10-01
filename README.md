@@ -38,6 +38,8 @@ These additional commands can be used to manage the service:<br/>
 `npm uninstall`<br/>
 For additional monitoring check https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/
 
+Create a file `token` in the main directory that holds the oauth token for the user that posts in twitch chat.
+
 ## User Guide
 
 Important files:
