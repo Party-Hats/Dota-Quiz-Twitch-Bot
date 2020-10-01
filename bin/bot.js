@@ -24,6 +24,9 @@ function buildClientOpts() {
     "channels": [
       config.channelName
     ],
+    "connection": {
+      reconnect: true
+    },
     "identity": {
       "username": config.identity.username,
       "password": token
