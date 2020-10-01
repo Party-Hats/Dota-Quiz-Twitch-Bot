@@ -30,6 +30,7 @@
   "engineStrict": true,
   "dependencies": {
     "app-module-path": "^2.2.0",
+    "axios": "^0.20.0",
     "basic-auth": "^2.0.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",

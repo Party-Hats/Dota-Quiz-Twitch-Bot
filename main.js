@@ -13,6 +13,7 @@ try {
   let bot = require('bin/bot.js');
   bot.setup();
 } catch (e) {
+  console.log(e);
   log.error(e);
   process.exit(1);
 }
