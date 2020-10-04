@@ -1,7 +1,7 @@
 {
   "channelName": "hansipowers",
   "channelAdmin": "hansipowers",
-  "postQuestionIntervalInSeconds": 360,
+  "postQuestionIntervalInSeconds": 300,
   "questionTimeoutInSeconds": 60,
   "questionCooldownPercent": 80,
   "answerPrefix":"?",

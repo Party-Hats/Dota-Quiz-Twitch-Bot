@@ -189,13 +189,6 @@
   ]
  },
  {
-  "question": "Welcher Hero hat den größten Damage Spread? (Stand 7.27)",
-  "answers": [
-   "ck",
-   "chaosknight"
-  ]
- },
- {
   "question": "In welchen Patch wurde die Abyssal Blade eingeführt?",
   "answers": [
    "6.73"
@@ -804,12 +797,6 @@
   ]
  },
  {
-  "question": "In welchen Patch erschien Winter Wyvern in Dota2?",
-  "answers": [
-   "6.75"
-  ]
- },
- {
   "question": "Welcher Patch brachte uns diesen Hero: Ember Spirit?",
   "answers": [
    "6.73"
@@ -900,23 +887,9 @@
   ]
  },
  {
-  "question": "Welcher Hero ist auch unter den Namen Bradwarden bekannt?",
-  "answers": [
-   "centaur",
-   "centaurwarrunner"
-  ]
- },
- {
   "question": "Dieser Hero wird auch Lucifer genannt?",
   "answers": [
    "doom"
-  ]
- },
- {
-  "question": "Dieser Hero ist auch unter den Namen Davion bekannt",
-  "answers": [
-   "dragonknight",
-   "dk"
   ]
  },
  {
@@ -993,13 +966,6 @@
   ]
  },
  {
-  "question": "Dieser Hero trägt auch den Namen Purist Thunderwrath",
-  "answers": [
-   "omni",
-   "omniknight"
-  ]
- },
- {
   "question": "Welcher Hero hat eine Ausbildung zum Metzger gemacht?",
   "answers": [
    "pudge"
@@ -1036,23 +1002,9 @@
   ]
  },
  {
-  "question": "Welcher Hero trägt den Namen Rizzrack?",
-  "answers": [
-   "timber",
-   "timbersaw"
-  ]
- },
- {
   "question": "Welcher Hero wird auch als der \"Stone Giant\" bezeichnet?",
   "answers": [
    "tiny"
-  ]
- },
- {
-  "question": "Welcher Hero trägt den Namen Rooftrellen?",
-  "answers": [
-   "treant",
-   "treantprotector"
   ]
  },
  {
@@ -1104,58 +1056,9 @@
   ]
  },
  {
-  "question": "Welcher Hero ist auch unter den Namen Gondar bekannt?",
-  "answers": [
-   "bountyhunter",
-   "bounty"
-  ]
- },
- {
-  "question": "Dieser Hero trägt auch die Bezeichnung Black Arachnia",
-  "answers": [
-   "brood",
-   "broodmother"
-  ]
- },
- {
   "question": "Welcher Hero trägt auch die Bezeichnung \"the Bone Fletcher\"?",
   "answers": [
    "clinkz"
-  ]
- },
- {
-  "question": "Diese Dame ist auch unter den Namen Traxex bekannt",
-  "answers": [
-   "drowranger",
-   "drow"
-  ]
- },
- {
-  "question": "Welcher Hero wird gesucht? Xin",
-  "answers": [
-   "ember",
-   "emberspirit"
-  ]
- },
- {
-  "question": "Welcher Hero wird gesucht? Darkterror",
-  "answers": [
-   "void",
-   "facelessvoid"
-  ]
- },
- {
-  "question": "Dieser Hero trägt den Namen Aurel",
-  "answers": [
-   "gyro",
-   "gyrocopter"
-  ]
- },
- {
-  "question": "Dieser Schwertkämpfer heißt Yurnero",
-  "answers": [
-   "juggernaut",
-   "jugger"
   ]
  },
  {
@@ -1186,34 +1089,6 @@
   "question": "Welcher Hero verbirgt sich hinter der Princess of the Moon?",
   "answers": [
    "mirana"
-  ]
- },
- {
-  "question": "Dieser Held trägt den stolzen Namen Sun Wukong",
-  "answers": [
-   "monkeyking",
-   "monkey"
-  ]
- },
- {
-  "question": "Hinter \"Slithice\" verbirgt sich welcher Hero?",
-  "answers": [
-   "naga",
-   "nagasiren"
-  ]
- },
- {
-  "question": "Donté Panlin wird auch wie genannt?",
-  "answers": [
-   "pangolier",
-   "pango"
-  ]
- },
- {
-  "question": "Mortred ist der Name von?",
-  "answers": [
-   "pa",
-   "phantomassassin"
   ]
  },
  {
@@ -1271,24 +1146,10 @@
   ]
  },
  {
-  "question": "Welcher Hero treibt sein Unwesen unter den Namen Jah'rakal?",
-  "answers": [
-   "troll",
-   "trollwarlord"
-  ]
- },
- {
   "question": "Ulfsaar ist der Name von?",
   "answers": [
    "ursa",
    "ursawarrior"
-  ]
- },
- {
-  "question": "Welcher Hero ist auch unter den Namen Shendelzare bekannt?",
-  "answers": [
-   "venge",
-   "vengefulspirit"
   ]
  },
  {
@@ -1389,13 +1250,6 @@
   ]
  },
  {
-  "question": "Welcher Hero verbirgt sich hinter den Namen Ezalor?",
-  "answers": [
-   "keeperofthelight",
-   "kotl"
-  ]
- },
- {
   "question": "Welcher Hero ist auch unter \"the Tormented Soul\" bekannt?",
   "answers": [
    "leshrac"
@@ -1420,32 +1274,9 @@
   ]
  },
  {
-  "question": "Rotund'jere zieht unter welcher Bezeichnung in den Kampf?",
-  "answers": [
-   "necrolyte",
-   "necrophos",
-   "necro"
-  ]
- },
- {
-  "question": "Ein nicht so helles Köpfchen ist Aggron Stonebreak. Wer?",
-  "answers": [
-   "ogre",
-   "ogremagi"
-  ]
- },
- {
   "question": "Welcher Hero verbirgt sich hinter den Namen Nerif?",
   "answers": [
    "oracle"
-  ]
- },
- {
-  "question": "Ein echter Harbringer ist welcher Dota Hero?",
-  "answers": [
-   "outworlddevourer",
-   "outworlddestroyer",
-   "od"
   ]
  },
  {
@@ -1483,13 +1314,6 @@
   "question": "Dragonus ist besser bekannt als?",
   "answers": [
    "skywrathmage"
-  ]
- },
- {
-  "question": "Raijin Thunderkeg ist nicht nur seinen Brüdern besser bekannt als?",
-  "answers": [
-   "stormspirit",
-   "storm"
   ]
  },
  {
@@ -2344,12 +2168,6 @@
   ]
  },
  {
-  "question": "Richtig oder falsch? Neutral Creeps können den Effekt von Shadow Dance nicht disablen.",
-  "answers": [
-   "falsch"
-  ]
- },
- {
   "question": "Richtig oder falsch? Moon Glaive Bounces können evaded werden.",
   "answers": [
    "falsch"
@@ -3069,12 +2887,6 @@
   ]
  },
  {
-  "question": "Lore Quiz! tos, the Lord of Blight, has his essence stored in this deceptively simple wand.",
-  "answers": [
-   "rodofatos"
-  ]
- },
- {
   "question": "Lore Quiz! The scepter of a wizard with demigod-like powers.",
   "answers": [
    "aghanim'sscepter",
@@ -3085,12 +2897,6 @@
   "question": "Lore Quiz! Considered the holy grail of necromancy and demonology, a powerful malefic force is locked within its pages.",
   "answers": [
    "necronomicon"
-  ]
- },
- {
-  "question": "Lore Quiz! The most guarded relic among the cult of Vyse, it is the most coveted weapon among magi.",
-  "answers": [
-   "scytheofcvyse"
   ]
  },
  {
@@ -3847,6 +3653,473 @@
   "question": "Responses Quiz! A quest? From the outer dark I come.",
   "answers": [
    "outworlddevourer"
+  ]
+ },
+ {
+  "question": "Responses Quiz! I have never run from a fight. But sometimes I do roll.",
+  "answers": [
+   "pangolier"
+  ]
+ },
+ {
+  "question": "Responses Quiz! In the blink of an eye.",
+  "answers": [
+   "phantomassassin"
+  ]
+ },
+ {
+  "question": "Responses Quiz! A quest? We shall strike.",
+  "answers": [
+   "phantomlancer"
+  ]
+ },
+ {
+  "question": "Responses Quiz! I find myself strangely drawn to this odd configuration of activity.",
+  "answers": [
+   "puck"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Someone needed a Butcher?",
+  "answers": [
+   "pudge"
+  ]
+ },
+ {
+  "question": "Responses Quiz! I'll take that life if you're not using it, he he he.",
+  "answers": [
+   "pugna"
+  ]
+ },
+ {
+  "question": "Responses Quiz! There will be pain, there will be screaming.",
+  "answers": [
+   "queenofpain"
+  ]
+ },
+ {
+  "question": "Responses Quiz! I bring the spark of death.",
+  "answers": [
+   "razor"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Cloaked and daggered.",
+  "answers": [
+   "riki"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Still a magus, yet now much grander!",
+  "answers": [
+   "rubick"
+  ]
+ },
+ {
+  "question": "Responses Quiz! I am king now of all I survey.",
+  "answers": [
+   "sandking"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Ozh domosh acha.",
+  "answers": [
+   "shadowdemon"
+  ]
+ },
+ {
+  "question": "Responses Quiz! It's the perfect time to start a new collection!",
+  "answers": [
+   "shadowfiend"
+  ]
+ },
+ {
+  "question": "Responses Quiz! I am the messenger of those gone by.",
+  "answers": [
+   "shadowshaman"
+  ]
+ },
+ {
+  "question": "Responses Quiz! It goes without saying, this one is in the bag!",
+  "answers": [
+   "silencer"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Comes now the King of Bones!",
+  "answers": [
+   "skeletonking"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Wraiths, your king is here!",
+  "answers": [
+   "wraithking"
+  ]
+ },
+ {
+  "question": "Responses Quiz! From the Ghastly Eyrie I can see to the ends of the world, and from this vantage point I declare with utter certainty that this one is in the bag!",
+  "answers": [
+   "skywrathmage"
+  ]
+ },
+ {
+  "question": "Responses Quiz! From the deeps, I rise.",
+  "answers": [
+   "slardar"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Your body was a cage, I just let you free!",
+  "answers": [
+   "slark"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Who wants some battle biscuits?",
+  "answers": [
+   "snapfire"
+  ]
+ },
+ {
+  "question": "Responses Quiz! From another dimension, a world beyond.",
+  "answers": [
+   "spectre"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Mooooaaagh.",
+  "answers": [
+   "spiritbreaker"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Feel the wind in your hair!",
+  "answers": [
+   "stormspirit"
+  ]
+ },
+ {
+  "question": "Responses Quiz! You should not have crossed me.",
+  "answers": [
+   "sven"
+  ]
+ },
+ {
+  "question": "Responses Quiz! If you want explosions. Accept no substitutes!",
+  "answers": [
+   "techies"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Measurements made. Bombs built. Powder's dry. Okay, let's blow something up!",
+  "answers": [
+   "techies"
+  ]
+ },
+ {
+  "question": "Responses Quiz! The mysteries cannot protect themselves.",
+  "answers": [
+   "templarassassin"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Fear he who fears nothing.",
+  "answers": [
+   "terrorblade"
+  ]
+ },
+ {
+  "question": "Responses Quiz! We'll turn this tide to our advantage.",
+  "answers": [
+   "tidehunter"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Trees? Why did it have to be trees?",
+  "answers": [
+   "timbersaw"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Conditions could hardly be more ideal!",
+  "answers": [
+   "tinker"
+  ]
+ },
+ {
+  "question": "Responses Quiz! The road ahead looks rocky, but that's all right with me.",
+  "answers": [
+   "tiny"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Is it weird that I drink with my feet?",
+  "answers": [
+   "treantprotector"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Jah'rakal!",
+  "answers": [
+   "trollwarlord"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Who's ready for a fight? The first hit is free! Anyone?",
+  "answers": [
+   "tusk"
+  ]
+ },
+ {
+  "question": "Responses Quiz! I rule the Abyssal Horde.",
+  "answers": [
+   "underlord"
+  ]
+ },
+ {
+  "question": "Responses Quiz! My stomach rumbles.",
+  "answers": [
+   "undying"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Roshan! I come to reclaim what you stole!",
+  "answers": [
+   "ursa"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Fuzzy wuzzy returns!",
+  "answers": [
+   "ursa"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Let my vengeance soar!",
+  "answers": [
+   "vengefulspirit"
+  ]
+ },
+ {
+  "question": "Responses Quiz! A quest? Deadly to the touch.",
+  "answers": [
+   "venomancer"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Here's poison in your eye.",
+  "answers": [
+   "viper"
+  ]
+ },
+ {
+  "question": "Responses Quiz! The hereafter is not for the likes of me.",
+  "answers": [
+   "visage"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Zan korobos kor koramord!",
+  "answers": [
+   "warlock"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Tichedricheaph.",
+  "answers": [
+   "weaver"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Ooh, now I get to shoot stuff!",
+  "answers": [
+   "windranger",
+   "windrunner"
+  ]
+ },
+ {
+  "question": "Responses Quiz! You were expecting fire?",
+  "answers": [
+   "winterwyvern"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Someone call de doctor?",
+  "answers": [
+   "witchdoctor"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Oh, look at it go.",
+  "answers": [
+   "witchdoctor"
+  ]
+ },
+ {
+  "question": "Responses Quiz! Time for target practice. ",
+  "answers": [
+   "sniper",
+   "windrunner",
+   "windranger"
+  ]
+ },
+ {
+  "question": "Responses Quiz! You can't run from heaven!",
+  "answers": [
+   "zeus"
+  ]
+ },
+ {
+  "question": "Lore Quiz! Atos, the Lord of Blight, has his essence stored in this deceptively simple wand. ",
+  "answers": [
+   "rodofatos"
+  ]
+ },
+ {
+  "question": "Welcher Hero trägt den Namen Rooftrellen? treantprotector",
+  "answers": [
+   "treantprotector"
+  ]
+ },
+ {
+  "question": "Dieser Hero ist auch unter den Namen Davion bekannt. ",
+  "answers": [
+   "dragonknight"
+  ]
+ },
+ {
+  "question": "Welcher Hero ist auch unter den Namen Bradwarden bekannt? ",
+  "answers": [
+   "centaurwarrunner"
+  ]
+ },
+ {
+  "question": "Welcher Hero trägt den Namen Rizzrack? ",
+  "answers": [
+   "timbersaw"
+  ]
+ },
+ {
+  "question": "Welcher Hero ist auch unter den Namen Gondar bekannt? ",
+  "answers": [
+   "bountyhunter"
+  ]
+ },
+ {
+  "question": "Raijin Thunderkeg ist nicht nur seinen Brüdern besser bekannt als?  ",
+  "answers": [
+   "stormspirit"
+  ]
+ },
+ {
+  "question": "Welcher Hero verbirgt sich hinter den Namen Ezalor? ",
+  "answers": [
+   "keeperofthelight"
+  ]
+ },
+ {
+  "question": "Diese Dame ist auch unter den Namen Traxex bekannt? ",
+  "answers": [
+   "drowranger"
+  ]
+ },
+ {
+  "question": " Welcher Hero wird gesucht? Xin",
+  "answers": [
+   "emberspirit"
+  ]
+ },
+ {
+  "question": "Welcher Hero wird gesucht? Darkterror",
+  "answers": [
+   "facelessvoid"
+  ]
+ },
+ {
+  "question": " Dieser Hero trägt den Namen Aurel ",
+  "answers": [
+   "gyrocopter"
+  ]
+ },
+ {
+  "question": "Dieser Schwertkämpfer heißt Yurnero. ",
+  "answers": [
+   "juggernaut"
+  ]
+ },
+ {
+  "question": "Dieser Held trägt den stolzen Namen Sun Wukong.",
+  "answers": [
+   "monkeyking"
+  ]
+ },
+ {
+  "question": "Hinter \"Slithice\" verbirgt sich welcher Hero? ",
+  "answers": [
+   "nagasiren"
+  ]
+ },
+ {
+  "question": "Donté Panlin wird auch wie genannt? ",
+  "answers": [
+   "pangolier"
+  ]
+ },
+ {
+  "question": "Mortred ist der Name von? ",
+  "answers": [
+   "phantomassassin"
+  ]
+ },
+ {
+  "question": "Dieser Hero trägt auch die Bezeichnung Black Arachnia.",
+  "answers": [
+   "broodmother"
+  ]
+ },
+ {
+  "question": " Welcher Hero treibt sein Unwesen unter den Namen Jah'rakal?",
+  "answers": [
+   "trollwarlord"
+  ]
+ },
+ {
+  "question": "Welcher Hero ist auch unter den Namen Shendelzare bekannt? ",
+  "answers": [
+   "vengefulspirit"
+  ]
+ },
+ {
+  "question": "Rotund'jere zieht unter welcher Bezeichnung in den Kampf?   ",
+  "answers": [
+   "necrolyte",
+   "necrophos"
+  ]
+ },
+ {
+  "question": "Ein nicht so helles Köpfchen ist Aggron Stonebreak. Wer? ",
+  "answers": [
+   "ogremagi"
+  ]
+ },
+ {
+  "question": "Ein echter Harbringer ist welcher Dota Hero?",
+  "answers": [
+   "outworlddevourer",
+   "outworlddestroyer"
+  ]
+ },
+ {
+  "question": "Lore Quiz! The most guarded relic among the cult of Vyse, it is the most coveted weapon among magi. ",
+  "answers": [
+   "scytheofvyse"
+  ]
+ },
+ {
+  "question": "Dieser Hero trägt auch den Namen Purist Thunderwrath.",
+  "answers": [
+   "omniknight"
   ]
  }
 ]
