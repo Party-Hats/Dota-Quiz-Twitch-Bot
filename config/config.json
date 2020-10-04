@@ -2,6 +2,7 @@
   "channelName": "hansipowers",
   "channelAdmin": "hansipowers",
   "postQuestionIntervalInSeconds": 300,
+  "disableBotWhenChannelIsOffline": true,
   "questionTimeoutInSeconds": 60,
   "questionCooldownPercent": 80,
   "answerPrefix":"?",

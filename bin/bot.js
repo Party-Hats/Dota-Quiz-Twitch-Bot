@@ -4,6 +4,11 @@ const store = require('bin/store');
 const log = require('bin/log');
 const timeConverter = require('bin/timeConverter');
 const questions = require('bin/questions');
+const channelHelper = require('bin/channelHelper');
+
+// Found by trial and error to be the maximum length for a chat message.
+// All further characters are just removed
+const MAX_CHAT_MESSAGE_LENGTH = 499;
 
 const tokenFile = 'token';
 const config = JSON.parse(fs.readFileSync('config/config.json', "utf-8"));
@@ -19,6 +24,9 @@ function buildClientOpts() {
     "channels": [
       config.channelName
     ],
+    "connection": {
+      reconnect: true
+    },
     "identity": {
       "username": config.identity.username,
       "password": token
@@ -32,10 +40,10 @@ function setup() {
   client.connect().then(function () {
     try {
       questions.initWithInterval(
-        ask,
-        config.postQuestionIntervalInSeconds,
-        config.questionTimeoutInSeconds,
-        config.questionCooldownPercent);
+          ask,
+          config.postQuestionIntervalInSeconds,
+          config.questionTimeoutInSeconds,
+          config.questionCooldownPercent);
     } catch (e) {
       log.error(e);
       client.disconnect();
@@ -51,7 +59,7 @@ function parseLocaleString(message, parameterMap) {
   return message;
 }
 
-function ask() {
+async function ask() {
   if (!running) {
     log.debug("Bot is not running. Skipping ask question");
     return;
@@ -68,15 +76,27 @@ function ask() {
   client.say(config.channelName, message);
   log.info("Quiz question asked: " + message);
   log.info("Possible answers: " + JSON.stringify(currentQuestion.answers));
+
+  if (config.disableBotWhenChannelIsOffline) {
+    let isOnline = await channelHelper.isChannelOnline();
+    if (!isOnline) {
+      running = false;
+      let offlineMessage = "Disabled bot, as stream is offline. Will not react to answers for current question";
+      client.say(config.channelName, offlineMessage);
+      log.info(offlineMessage);
+    }
+  }
 }
 
 function timeoutQuestion(timedOutQuestion) {
-  client.say(config.channelName, parseLocaleString(lang.questionTimedOut, {
-    question: timedOutQuestion.question,
-    answer: timedOutQuestion.answers[0],
-    newQuestionIn: timeConverter.forSeconds(
-        questions.getSecondsUntilNextQuestion())
-  }));
+  if (running) {
+    client.say(config.channelName, parseLocaleString(lang.questionTimedOut, {
+      question: timedOutQuestion.question,
+      answer: timedOutQuestion.answers[0],
+      newQuestionIn: timeConverter.forSeconds(
+          questions.getSecondsUntilNextQuestion())
+    }));
+  }
 }
 
 function onMessageHandler(target, context, message, self) {
@@ -139,8 +159,9 @@ function resolveSpecialCommands(channel, user, message) {
   if (resolveAdminCommands(channel, user, message)) {
     return true;
   }
-  const comms = new Map(Object.entries(config.commands).map(([k,v]) => ([v.toLowerCase(),k])));
-  switch(comms.get(message)) {
+  const comms = new Map(
+      Object.entries(config.commands).map(([k, v]) => ([v.toLowerCase(), k])));
+  switch (comms.get(message)) {
     case "personalScore":
       log.info("User \"" + user + "\" sent command to get own score");
       store.readForUser(user, function (data, rank) {
@@ -175,22 +196,25 @@ function resolveSpecialCommands(channel, user, message) {
 }
 
 function resolveAdminCommands(channel, user, message) {
-  const comms = new Map(Object.entries(config.adminCommands).map(([k,v]) => ([v.toLowerCase(),k])));
+  const comms = new Map(Object.entries(config.adminCommands).map(
+      ([k, v]) => ([v.toLowerCase(), k])));
 
   const isAdminUser = config.channelAdmin === user;
   const adminCommandIssued = comms.has(message);
 
   if (adminCommandIssued) {
     if (isAdminUser) {
-      switch(comms.get(message)) {
+      switch (comms.get(message)) {
         case "allScores":
-          log.info("Admin user \"" + user + "\" sent command to get all scores");
+          log.info(
+              "Admin user \"" + user + "\" sent command to get all scores");
           store.readAll(function (data) {
             _sendMultilineScores(channel, data);
           });
           break;
         case "reset":
-          log.info("Admin user \"" + user + "\" sent command to reset all scores");
+          log.info(
+              "Admin user \"" + user + "\" sent command to reset all scores");
           store.resetStore(function (data) {
             client.say(channel, parseLocaleString(lang.commandReset, {}));
             _sendMultilineScores(channel, data);
@@ -210,7 +234,8 @@ function resolveAdminCommands(channel, user, message) {
           log.info("Started bot");
           break;
         case "topScores":
-          log.info("Admin user \"" + user + "\" sent command to get top scores");
+          log.info(
+              "Admin user \"" + user + "\" sent command to get top scores");
           store.readAll(function (data) {
             _sendMultilineScores(channel, data.slice(0, 10));
           });
@@ -240,17 +265,27 @@ function _sendMultilineScores(channel, data) {
     client.say(channel,
         parseLocaleString(lang.commandResetNobodyHasPoints, {}));
   }
+  let message = "";
   for (let i = 0; i < data.length; i++) {
     let user = data[i].user;
     let score = data[i].score;
     let rank = i + 1;
-    log.debug("User \"" + user + "\" had " + score + " points with rank " + rank);
-    client.say(channel, parseLocaleString(lang.commandScore, {
+    log.debug(
+        "User \"" + user + "\" had " + score + " points with rank " + rank);
+    let nextMessage = parseLocaleString(lang.commandScoreShort, {
       "user": user,
       "scoreNumber": score,
       "userRank": rank
-    }));
+    });
+    let messageWithNextMessage = message + " " + nextMessage;
+    if (messageWithNextMessage.length < MAX_CHAT_MESSAGE_LENGTH) {
+      message = messageWithNextMessage;
+    } else {
+      client.say(channel, message);
+      message = nextMessage;
+    }
   }
+  client.say(channel, message);
 }
 
 function onConnectedHandler(addr, port) {

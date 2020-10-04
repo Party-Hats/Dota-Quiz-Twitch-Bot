@@ -5,6 +5,7 @@
   "correctAnswer": "Sauba ${user}, du gscheids Burscherl! Nächste Frage in: ${newQuestionIn}",
   "questionTimedOut": "In der Zeit hätt der Hansi a Leberkassemmel gessn. Eine mögliche Antwort wäre ${answer} gewesen. Nächste Frage in ${newQuestionIn}",
   "commandScore": "${user} deine gesamte Punktzahl ist ${scoreNumber}. Aktueller Rang: ${userRank}",
+  "commandScoreShort": "${userRank}. ${user} (${scoreNumber})",
   "commandReset": "Alle Punktzahlen werden zurückgesetzt. Hier der Punktstand bis hierhin:",
   "commandResetNobodyHasPoints": "Bisher hat niemand Punkte gesammelt",
   "hours": "Std",

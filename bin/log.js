@@ -17,7 +17,6 @@ const debugLog = rfs.createStream(debugLogPath, {
 
 function _doLog(file, message) {
   file.write(message + "\n");
-  console.log(message);
 }
 
 function debug(message) {
