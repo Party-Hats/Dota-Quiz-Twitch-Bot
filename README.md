@@ -72,6 +72,7 @@ Note, that all commands are case-insensitive, meaning, that for example `#score`
 
 ### User Commands
 * `#score` :pushpin:: Sends a message with the current score of the user, that sent the command
+* `#topTen` :pushpin:: Prints the scores of the ten users with the most points
 * `#frage` :pushpin:: Resends the current question
 
 ### Admin Commands
@@ -79,7 +80,6 @@ Note, that all commands are case-insensitive, meaning, that for example `#score`
 * `#stopQuiz` :pushpin:: Stops the bots feature to post questions in chat. It will still react to all commands (user or admin)
 * `#totalScore` :pushpin:: Prints the current scores for ALL users, that have collected points to the chat
 * `#reset` :pushpin:: Resets the saved points for ALL users. Prints them all to the chat before clearing it
-* `#topTen` :pushpin:: Prints the scores of the ten users with the most points
 
 ## Configuration
 
@@ -118,6 +118,9 @@ The name of the twitch account, that is used by the bot to send and receive mess
 #### commands.personalScore
 See [User Commands `#score`](#user-commands)
 
+#### commands.topScores
+See [User Commands `#topTen`](#user-commands)
+
 #### commands.currentQuestion
 See [User Commands `#frage`](#user-commands)
 
@@ -132,9 +135,6 @@ See [Admin Commands `#totalScore`](#admin-commands)
 
 #### adminCommands.reset
 See [Admin Commands `#reset`](#admin-commands)
-
-#### adminCommands.topScores
-See [Admin Commands `#topTen`](#admin-commands)
 
 ### About questions and answers
 Currently all questions are build like this:
