@@ -13,13 +13,13 @@
   },
   "commands": {
     "personalScore": "#score",
+    "topScores": "#topten",
     "currentQuestion": "#frage"
   },
   "adminCommands": {
     "start": "#startQuiz",
     "stop": "#stopQuiz",
     "allScores": "#totalScore",
-    "reset": "#reset",
-    "topScores": "#topten"
+    "reset": "#reset"
   }
 }
