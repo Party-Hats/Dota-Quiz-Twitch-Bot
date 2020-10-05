@@ -172,6 +172,12 @@ function resolveSpecialCommands(channel, user, message) {
         }));
       });
       return true;
+    case "topScores":
+      log.info("User \"" + user + "\" sent command to get top scores");
+      store.readAll(function (data) {
+        _sendMultilineScores(channel, data.slice(0, 10));
+      });
+      break;
     case "currentQuestion":
       log.info("User \"" + user + "\" sent message to get current question");
       if (!questions.isQuestionAvailable()) {
@@ -232,13 +238,6 @@ function resolveAdminCommands(channel, user, message) {
                     questions.getSecondsUntilNextQuestion())
               }));
           log.info("Started bot");
-          break;
-        case "topScores":
-          log.info(
-              "Admin user \"" + user + "\" sent command to get top scores");
-          store.readAll(function (data) {
-            _sendMultilineScores(channel, data.slice(0, 10));
-          });
           break;
         case "stop":
           log.info("Admin user \"" + user + "\" sent command to stop bot");
