@@ -1,11 +1,14 @@
 {
   "channelName": "hansipowers",
-  "channelAdmin": "hansipowers",
+  "channelAdmins": [
+    "hansipowers",
+    "chris_wild"
+  ],
   "postQuestionIntervalInSeconds": 300,
   "disableBotWhenChannelIsOffline": true,
   "questionTimeoutInSeconds": 60,
   "questionCooldownPercent": 80,
-  "answerPrefix":"?",
+  "answerPrefix": "?",
   "reactToWrongAnswer": false,
   "reactToNoQuestion": false,
   "identity": {

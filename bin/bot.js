@@ -205,7 +205,7 @@ function resolveAdminCommands(channel, user, message) {
   const comms = new Map(Object.entries(config.adminCommands).map(
       ([k, v]) => ([v.toLowerCase(), k])));
 
-  const isAdminUser = config.channelAdmin === user;
+  const isAdminUser = config.channelAdmins.includes(user);
   const adminCommandIssued = comms.has(message);
 
   if (adminCommandIssued) {
