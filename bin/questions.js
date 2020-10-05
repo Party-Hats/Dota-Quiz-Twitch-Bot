@@ -6,6 +6,7 @@ const questionsFilePath = 'config/questions.json';
 
 const questionDrawerName = "questionsRandom";
 const questionDrawerPersistencePath = questionDrawerName + ".tmp";
+const config = JSON.parse(fs.readFileSync('config/config.json', "utf-8"));
 
 let _askCallback;
 let _intervalSec;
@@ -42,7 +43,8 @@ function _doInitQuestionDrawer() {
       if (err) {
         throw err;
       }
-      log.info("Deleted temporary questionDrawer persistence file: "
+      log.info(
+          "Deleted temporary questionDrawer persistence file after loading its content: "
           + questionDrawerPersistencePath);
     })
   } else {
@@ -111,11 +113,22 @@ function _doTimeoutQuestion() {
 function isAnswerCorrect(answer) {
   // Remove whitespaces from answer
   answer = answer.replace(/\s/g, '').toLowerCase();
-  let answerCorrect = currentQuestion.answers.includes(answer);
+  let answerCorrect = _findCorrectAnswers().includes(answer);
   if (answerCorrect) {
     _doTimeoutQuestion();
   }
   return answerCorrect;
+}
+
+function _findCorrectAnswers() {
+  if (currentQuestion.binary === true) {
+    if (currentQuestion.binaryAnswer) {
+      return config.question.binary.trueAnswers;
+    } else {
+      return config.question.binary.falseAnswers;
+    }
+  }
+  return currentQuestion.answers;
 }
 
 function isQuestionAvailable() {
@@ -163,7 +176,8 @@ process.on("SIGINT", function () {
         JSON.stringify(questionDrawer.getDrawnNums()));
     log.info("Successfully persisted question drawer");
   } else {
-    log.warn("No question drawer was defined, so none is backed up for next startup");
+    log.warn(
+        "No question drawer was defined, so none is backed up for next startup");
   }
   process.exit(0);
 });

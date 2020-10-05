@@ -24,5 +24,19 @@
     "stop": "#stopQuiz",
     "allScores": "#totalScore",
     "reset": "#reset"
+  },
+  "question": {
+    "binary": {
+      "trueAnswers": [
+        "richtig",
+        "true",
+        "yes"
+      ],
+      "falseAnswers": [
+        "falsch",
+        "false",
+        "no"
+      ]
+    }
   }
 }

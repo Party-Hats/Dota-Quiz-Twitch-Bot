@@ -14,6 +14,12 @@ block content
                 = ' '
                 = question.question
                 input(type="hidden", name="toDelete", value=question.question)
-          ul
-            for answer in question.answers
-                li= answer
+          if question.answers !== undefined
+              ul
+                for answer in question.answers
+                    li= answer
+          if question.binary
+            if question.binaryAnswer
+              div(style={'padding-left': '25px'}) Ja/Nein Antwort: - richtig
+            else
+              div(style={'padding-left': '25px'}) Ja/Nein Antwort: - falsch

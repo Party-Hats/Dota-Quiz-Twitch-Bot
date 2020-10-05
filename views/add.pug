@@ -3,13 +3,19 @@ extends layout
 block content
     include main
     script.
+        let isBinary = false;
         function addAnswer() {
           let newDiv = document.createElement('div');
           newDiv.classList.add("input");
+          newDiv.classList.add("normalAnswer");
           newDiv.innerHTML = document.getElementById('newAnswer').innerHTML;
           document.getElementById('form').append(newDiv);
         }
         function validateForm() {
+          // If its a binary question, all given answers are ignored, so we also don't have to validate them
+          if (isBinary) {
+            return true;
+          }
           let errorsList = document.getElementById('errors').firstChild;
           while (errorsList.firstChild) {
             errorsList.removeChild(errorsList.firstChild);
@@ -46,18 +52,43 @@ block content
           });
           return false;
         }
+        function toggleBinaryQuestion() {
+          let binaryVisibility;
+          let normalVisibility;
+          if (isBinary) {
+            binaryVisibility = 'hidden';
+            normalVisibility = 'visible';
+            isBinary = false;
+          } else {
+            binaryVisibility = 'visible';
+            normalVisibility = 'hidden';
+            isBinary = true;
+          }
+          document.getElementById("addAnswer").style.visibility = normalVisibility;
+          document.getElementById("binaryDiv").style.visibility = binaryVisibility;
+          for (const answerElement of document.getElementsByClassName("normalAnswer")) {
+            answerElement.style.visibility = normalVisibility;
+          }
+          document.getElementById("errors").style.visibility = normalVisibility;
+          document.getElementById("binaryQuestion").checked = isBinary;
+        }
 
     h1= "Dota Quiz Fragen"
     p Bitte hier neue Fragen eintragen
 
-    button(onclick='addAnswer()') Weitere Antwort
+    button(onclick='toggleBinaryQuestion()') Ja/Nein Frage
+    button(onclick='addAnswer()')#addAnswer Weitere Antwort
     form(name="add-question", method="post", onsubmit="return validateForm()")#form
         div.actions
             input(type="submit", value="Speichern")
+        input(id="binaryQuestion", style={visibility: 'hidden'}, name="binaryQuestion", type="checkbox", checked=false, height=0)
         div.input
             span.label Frage
             input(type="text", name="question", size=40)
-        div.input#newAnswer
+        div.input#binaryDiv(style={visibility: 'hidden'})
+            span.label Antwort: Richtig
+            input(type='checkbox', name="binaryAnswer", checked=false)
+        div.input#newAnswer(class="normalAnswer")
             span.label Antwort
             input(type="text", name="answers", size=40)
     #errors
