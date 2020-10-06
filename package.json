@@ -16,6 +16,7 @@
     "serviceName": "twitchbot"
   },
   "scripts": {
+    "install": "npm install --no-optional",
     "setup-system-startup": "pm2 startup --service-name $npm_package_config_serviceName",
     "start:dev": "node $npm_package_config_mainRunner",
     "start": "pm2 start $npm_package_config_mainRunner --name $npm_package_config_serviceName --log log/daemon.log --time",
