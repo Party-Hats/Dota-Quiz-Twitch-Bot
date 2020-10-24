@@ -75,7 +75,7 @@ async function ask() {
 
   client.say(config.channelName, message);
   log.info("Quiz question asked: " + message);
-  log.info("Possible answers: " + JSON.stringify(currentQuestion.answers));
+  log.info("Possible answers: " + JSON.stringify(questions.findCorrectAnswers()));
 
   if (config.disableBotWhenChannelIsOffline) {
     let isOnline = await channelHelper.isChannelOnline();
@@ -134,9 +134,19 @@ function onMessageHandler(target, context, message, self) {
     return;
   }
 
+  if (!questions.canAnswer(chatSender)) {
+    log.info("User \"" + chatSender + "\" is not allowed to answer current question");
+    if (config.reactToNotAllowedToAnswer) {
+      client.say(target, parseLocaleString(lang.notAllowedToAnswer, {
+        user: chatSender
+      }))
+    }
+    return;
+  }
+
   let answer = message.substr(config.answerPrefix.length);
 
-  if (questions.isAnswerCorrect(answer)) {
+  if (questions.isAnswerCorrect(answer, chatSender)) {
     log.info("User \"" + chatSender + "\" sent the correct answer");
     client.say(target, parseLocaleString(lang.correctAnswer, {
       user: chatSender,

@@ -11,6 +11,7 @@
   "answerPrefix": "?",
   "reactToWrongAnswer": false,
   "reactToNoQuestion": false,
+  "reactToNotAllowedToAnswer" : false,
   "identity": {
     "username": "dota_quiz"
   },

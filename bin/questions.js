@@ -12,6 +12,7 @@ let _askCallback;
 let _intervalSec;
 let _timeoutSec;
 let _cooldownPercent;
+let _binaryQuestionWrongAnswers = [];
 
 let questions;
 let questionDrawer;
@@ -78,6 +79,7 @@ function newQuestion(callback) {
   do {
     try {
       currentQuestion = questions[questionDrawer.draw()];
+      _binaryQuestionWrongAnswers = [];
       error = undefined;
     } catch (e) {
       error = e;
@@ -108,19 +110,32 @@ function _doTimeoutQuestion() {
     currentTimeout = undefined;
   }
   currentQuestion = {};
+  _binaryQuestionWrongAnswers = [];
 }
 
-function isAnswerCorrect(answer) {
+function canAnswer(user) {
+  return !_binaryQuestionWrongAnswers.includes(user);
+}
+
+function isAnswerCorrect(answer, user) {
+  if (_binaryQuestionWrongAnswers.includes(user)) {
+    return false;
+  }
   // Remove whitespaces from answer
   answer = answer.replace(/\s/g, '').toLowerCase();
-  let answerCorrect = _findCorrectAnswers().includes(answer);
+  let answerCorrect = findCorrectAnswers().includes(answer);
   if (answerCorrect) {
     _doTimeoutQuestion();
+  } else {
+    log.debug("Adding user \"" + user
+        + "\" to blocked list, as answer was not correct. Current list: "
+        + JSON.stringify(_binaryQuestionWrongAnswers));
+    _binaryQuestionWrongAnswers.push(user);
   }
   return answerCorrect;
 }
 
-function _findCorrectAnswers() {
+function findCorrectAnswers() {
   if (currentQuestion.binary === true) {
     if (currentQuestion.binaryAnswer) {
       return config.question.binary.trueAnswers;
@@ -186,6 +201,8 @@ module.exports.initWithInterval = initWithInterval;
 module.exports.refreshQuestions = refreshQuestions;
 module.exports.newQuestion = newQuestion;
 module.exports.isAnswerCorrect = isAnswerCorrect;
+module.exports.canAnswer = canAnswer;
+module.exports.findCorrectAnswers = findCorrectAnswers;
 module.exports.isQuestionAvailable = isQuestionAvailable;
 module.exports.addQuestion = addQuestion;
 module.exports.removeQuestion = removeQuestion;
