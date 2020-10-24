@@ -2,7 +2,7 @@ const fs = require('fs');
 const axios = require('axios');
 const log = require('bin/log');
 
-const token = (fs.readFileSync('token') + '').replace('oauth:', '');
+const token = (fs.readFileSync('token') + '').replace('oauth:', '').trim();
 const config = JSON.parse(fs.readFileSync('config/config.json', "utf-8"));
 
 const FIND_CHANNEL_URL = "https://api.twitch.tv/kraken/users?login=${channelName}";
@@ -26,8 +26,7 @@ async function _findChannelId() {
         });
     log.debug("Found response body when trying to find channelId: " + JSON.stringify(response.data));
   } catch (error) {
-    log.error('Could not find channelId for channel "' + channelName + '": '
-        + JSON.stringify(error.response.data));
+    log.error('Could not find channelId for channel "' + channelName + '": ' + error);
     return;
   }
   cachedChannelId = response.data.users[0]._id;
@@ -60,8 +59,7 @@ async function isChannelOnline() {
         });
     log.debug("Found response body when trying to find channelId: " + JSON.stringify(response.data));
   } catch (error) {
-    log.error('Could not find stream for channelId "' + cachedChannelId + '": '
-        + JSON.stringify(error.response.data));
+    log.error('Could not find stream for channelId "' + cachedChannelId + '": ' + error);
     return true;
   }
   let isOnline = response.data.stream != null;

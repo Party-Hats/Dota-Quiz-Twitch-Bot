@@ -27,7 +27,7 @@ Make sure `NodeJS` and `npm` are installed on your pc
 
 To have the bot run as a service in production execute the following commands:<br/>
 `npm install` (Installs all dependencies)<br/>
-`npm setup-system-startup`<br/>
+`npm run setup-system-startup`<br/>
 This will print a command that should be executed to have the service be in the autostart of the machine<br/>
 `npm start`<br/>
 This will start the service in the background where all logs are printed to te corresponding log files.
