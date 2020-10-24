@@ -1617,705 +1617,588 @@
  },
  {
   "question": "Richtig oder falsch? Shallow Grave schützt nicht vor der Culling Blade. ",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Der self damage von Mist Coil kann von Aphotic Shield absorbiert werden. ",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Aphotic Shield trifft auch invisible units.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Greevil's Greed triggert auch bei einen Hero deny.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": " Richtig oder falsch? Greevil's Greed triggert nicht bei einen Tower Last Hit.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Der Call of the Wild Hawk blockt keine Neutral Camps.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": " Richtig oder falsch? Primal Roar stunnt nicht durch Spell Immunity.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Die Buff-Reihenfolge von Drunken Brawler ist folgende: fast-slow-fast-slow-fast.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": " Richtig oder falsch? Beim Primal Split übernimmt der Storm Warrior alle Auren des Helden.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": " Richtig oder falsch? Für jeden Warpath Stack wird Bristleback etwas größer.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Der Double Edge self damage ist nicht tödlich.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Phantasm beinhaltet einen Dispel.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Battery Assault trifft auch invisible Units.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Power Cogs können neutral camps blocken.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Devour Gold ist unreliable.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Der Cooldown von Dragon Blood beträgt 4-6-8-10 Sekunden.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Während Rolling Boulder kann man keinen Force Staff usen.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Enchant Totem und eine DD Rune stacken.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Der Enchant Totem Hit kann missen. ",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Aftershock wird auch durch Items ausgelöst.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Von Echo Stomp getroffene Einheiten werden von Towern attackiert. ",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Huskar kann durch die Benutzung von Burning Spear selbst sterben. ",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Berserker's Blood macht Huskar größer.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Es ist Huskar möglich während der Benutzung von Life Break Items zu benutzen.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Ein Doppelklick auf Relocate befördert euch zum Fountain.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Torrent gibt keine Vision über dem Cast-Gebiet.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Ein Rum Hangover wird durch einen Spell des Brewmasters ausgelöst.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Press The Attack beinhaltet einen Basic Dispel.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Units die von Duel betroffen sind, können durch Force Staff bewegt werden.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Feast funktioniert auch gegen Roshan.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Während Infest kann der Spieler sein Armlet ausschalten.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Ein infesteter Creep kann eine Smoke aufdecken.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Infest restores the unit's mana on cast.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Feral Impulse hat auf jeden Level 10 Sekunden Cooldown.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Der Cooldown von Reverse Polarity beträgt 140-110-90 Sekunden.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Du kannst mit dem Spear of Mars, Gegner gegen die Fissure nageln. ",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Der Cooldown von Hunter in the Night beträgt auf jeden Level 9 Sekunden. ",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Degen Aura pierced Spell Immunity.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Man kann während des Icarus Dive auch Items benutzen. ",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Sun Ray healt auch den Caster. ",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Supernova kann auch das Ultimate der Teammates refreshen. ",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Dismember hört man global.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Epicenter wird beim Tod des Helden beendet. ",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Slithereen Crush beinhaltet einen Slow.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Snapfire backt gerne Kekse.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Man kann während Charge of Darkness keine Items benutzen.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Warcry ist eine passive Fähigkeit.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Auch der Schaden von Neutrals kann Kraken Shell auslösen.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Whirling Death zerstört Bäume.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Toss kann Tower beschädigen.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Tiny kann Units zu Runen tossen.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Grow lässt zwar Tiny wachsen, aber er schaut dadurch auch jünger aus.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Treant Protector ist ein Kannibale.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Tusk kann während Snowball Items benutzen.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Man kann Dark Rift benutzen. ",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Decay kann die Strengh des Gegners auf 0 senken.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Decay Stacks machen Undying größer.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Aegis wird vor Reincarnation ausgelöst.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Tusk kann z.B. seinen Dominator Creep mit in den Snowball packen.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Mana Break und Manabreak stacken.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Spark Wraith ignoriert Spell Immune Units. ",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Tempest Double kopiert auch den Gem of True Sight.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Es ist möglich trotz Bewegung von Rupture keinen Schaden zu nehmen.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Jinada gold is unreliable. ",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Broodmother besitzt nur eine Art von Spiderlingen.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Clinkz besitzt den Spell \"Burning Arrows\".",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Der slow von Frost Arrows stackt mit sich selber.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Searing Chains trifft auch invisible Units. ",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Sleight of Fist verursacht keinen Schaden wenn man disarmed ist. ",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Schaden der durch Time Walk rückgängig gemacht wird, zählt als heal.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Force Staff hat keinen Effekt auf einen Hero in Chronosphere.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Time Dilation hat nur einen Effekt auf Abilities mit Cooldown. ",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Rocket Barrage trifft auch invisible Units. ",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Force Staff hat einen Effekt auf die Homing Missile.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Die Homing Missile wird nicht durch die Chronosphere zerstört. ",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Der Side Gunner funktioniert auch während man disabled ist.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Man kann während Blade Fury keine anderen Spells benutzen. ",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Der Effekt von mehreren Healing Wards stackt.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Der Spirit Bear kann denied werden. ",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Split Shot funktioniert auch beim attackieren von Allies.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Meepo kann zu Illusions poffen.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Man kann während Leap Items benutzen.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Monkey King kann sich selbst stunnen.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Mit Morph switcht man zwischen Strengh und Agility hin und her. ",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Man kann von Song of the Siren betroffene Gebäude angreifen. ",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Man kann während man TP´d, Vendetta benutzen. ",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Swashbuckle trifft auch ethereal units.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Phantom Assassin besitzt den Spell Ghost Strike.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Plasma Field kann den Gegner zwei Mal treffen.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Eye of the Storm trifft auch Roshan.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Riki´s Nachname is Tahlin.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Wards können Shadow Fiend eine Seele geben.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Moon Glaive Bounces können evaded werden.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Sniper besitzt den Spell \"Shrapnol\".",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Dispersion Damage disabled nicht den Blink Dagger.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Der Meld debuff stackt. ",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Psi Blades können auch invisible units treffen.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Spells die man während der Metamorphosis nutzt, haben eine kürzere backswing time.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Troll Warlord besitzt den Spell Battle Dance.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Enrage macht den Benutzer größer. ",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Der Schaden von Corrosive Skin kann reflected werden. ",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? The Swarm funktioniert auch in der Chronosphere.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Shukuchi kann den gleichen Helden zwei Mal treffen. ",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Cold Feet kann auf das gleiche Target 2x gleichzeitig gecastet werden. ",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Hand of God healt Illussions.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Enigma besitz den Spell \"'Satanic Conversion\".",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Quas gibt euch Attack Damage. ",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Scepter Macropyre hört sich anders an. ",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Chain Frost kann auch Zombies treffen.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Finger of Death Schaden kann gedodged werden.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Bloodlust macht einen größer.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Oracle besitzt den Spell Fortune's End.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Decrepify funktioniert auf den Tombstone.",
-  "answers": [
-   "richtig"
-  ]
+  "binary": true,
+  "binaryAnswer": true
  },
  {
   "question": "Richtig oder falsch? Serpent Wards können Roshan trappen.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Man kann während Ball Lightning keine Items benutzen.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Rearm funktioniert auch auf den Meteor Hammer.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Richtig oder falsch? Fatal Bonds funktioniert auch auf Roshan.",
-  "answers": [
-   "falsch"
-  ]
+  "binary": true,
+  "binaryAnswer": false
  },
  {
   "question": "Lore Quiz! An old bottle that survived the ages, the contents placed inside become enchanted.",
