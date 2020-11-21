@@ -1,7 +1,8 @@
 {
-  "channelName": "n4ppo_sc2",
+  "channelName": "hansipowers",
   "channelAdmins": [
-    "n4ppo_sc2"
+    "hansipowers",
+    "chris_wild"
   ],
   "postQuestionIntervalInSeconds": 300,
   "disableBotWhenChannelIsOffline": true,
@@ -11,7 +12,7 @@
   "reactToWrongAnswer": false,
   "reactToNoQuestion": false,
   "identity": {
-    "username": "n4ppo_sc2"
+    "username": "dota_quiz"
   },
   "commands": {
     "personalScore": "#score",
