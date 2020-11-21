@@ -22,7 +22,12 @@
     "start": "pm2 start $npm_package_config_mainRunner --name $npm_package_config_serviceName --log log/daemon.log --time",
     "stop": "pm2 stop $npm_package_config_serviceName",
     "restart": "pm2 reload $npm_package_config_serviceName",
-    "uninstall": "pm2 delete $npm_package_config_serviceName"
+    "uninstall": "pm2 delete $npm_package_config_serviceName",
+    "build:docker": "docker build -t party-hats/dota-quiz-bot .",
+    "run:docker": "docker run -d -p 8080:8080 -v $(pwd)/token:/home/node/token:ro -v $(pwd)/config:/home/node/config:ro --restart=always --name dota-quiz-bot party-hats/dota-quiz-bot",
+    "run:docker-debug": "docker run -d --rm -p 8080:8080 -e NODE_ENV=debug -v $(pwd)/token:/home/node/token:ro -v $(pwd)/config:/home/node/config:ro --name dota-quiz-bot-debug party-hats/dota-quiz-bot",
+    "start:docker": "docker start dota-quiz-bot",
+    "stop:docker": "docker stop dota-quiz-bot"
   },
   "engines": {
     "node": ">=10",
